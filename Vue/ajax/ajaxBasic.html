@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="../lib/vue_2_5_21.js"></script>
+</head>
+<body>
+<!-- Sample Ajax -->
+<h1>- Sample Ajax</h1>
+<div id="app">
+    <div v-for="record in records">
+        <p>{{ record.id }} {{ record.title }} {{ record.releaseYear }}</p>
+    </div>
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            records: []
+        },
+        created() {
+        fetch("https://facebook.github.io/react-native/movies.json")
+                .then(response => {
+            if (response.ok) {
+            return response.json();
+        }
+        throw new Error("Newtwork response was not ok");
+    })
+    .then(json => {
+        var records = json.movies;
+    this.records = records;
+    console.log(this.records);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+    }
+    });
+</script>
+</body>
+</html>

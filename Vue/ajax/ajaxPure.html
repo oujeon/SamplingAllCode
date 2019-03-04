@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="https://unpkg.com/vue@2.5.21/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<!-- Sample Ajax -->
+<h1>- Sample Ajax</h1>
+<div id="app">
+    <div v-for="record in records">
+        <p> {{ record.id }} {{ record.title }} {{ record.releaseYear }}</p>
+    </div>
+</div>
+<script>
+    var mixin = {
+        ajax:{
+            data:{
+                error:0, // 오류상태
+                loading:true, // 통신상태
+                records:[] // 검색결과 저장용
+            },
+            methods:{
+                getData:function(){
+                    var _this = this;
+                    _this.loading = true;
+                    var xhr = new XMLHttpRequest();
+                    var self = this;
+                    xhr.open('GET', "https://facebook.github.io/react-native/movies.json");
+                    xhr.onload = function () {
+                        console.log(JSON.parse(xhr.responseText));
+                        var responsetext = JSON.parse(xhr.responseText);
+                        _this.records = responsetext.movies;
+                    }
+                    xhr.send() ;
+                }
+            },
+            mounted:function(){
+                // Ajax 실행
+                this.getData();
+            }
+        }
+    }
+    var app = new Vue({
+        el:'#app',
+        mixins: [mixin.ajax],
+        data:{
+            request:{
+                url:"https://facebook.github.io/react-native/movies.json", // 호출 url
+                data:{ // 요청 데이터
+                    date:'2017/10/11'
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
