@@ -8,7 +8,7 @@
 
 ## Intro
 
-Angularjs, Vue.js, React.js, Extjs, Javascriptì— ëŒ€í•œ Sampling ëª¨ìŒì§‘ì´ë‹¤.
+Angularjs, Vue.js, React.js, Extjs, Javascript¿¡ ´ëÇÑ Sampling ¸ğÀ½ÁıÀÌ´Ù.
 
 ## License
 
