@@ -2,4 +2,4 @@
 
 ## Intro
 
-Angularjs¿¡ ´ëÇÑ Sampling ¸ğÀ½ÁıÀÌ´Ù.
+Angularjsì— ëŒ€í•œ Sampling ëª¨ìŒì§‘ì´ë‹¤.

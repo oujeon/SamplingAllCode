@@ -2,7 +2,7 @@
 
 ## Intro
 
-angularjs·Î ÃÖÃÊ ÇÁ·Î±×·¥ÀÌ´Ù.
+angularjsë¡œ ìµœì´ˆ í”„ë¡œê·¸ë¨ì´ë‹¤.
 
 ## version
 

@@ -1,15 +1,15 @@
 # Single File Components
 
 ``` bash
-vue-cli¸¦ ¼³Ä¡ÇØ¾ß ÇÑ´Ù.
+vue-clië¥¼ ì„¤ì¹˜í•´ì•¼ í•œë‹¤.
 
-vue-cli¸¦ ¼³Ä¡ÇÏ¸ç´Â ±âº»ÀûÀ¸·Î *.vue°¡ ½ÇÇàµÈ´Ù.
+vue-clië¥¼ ì„¤ì¹˜í•˜ë©°ëŠ” ê¸°ë³¸ì ìœ¼ë¡œ *.vueê°€ ì‹¤í–‰ëœë‹¤.
 
-vue-loader´Â vue-cli¿¡ ¸ğµÎ ¼³Ä¡µÇ¾î ÀÖ´Ù.
+vue-loaderëŠ” vue-cliì— ëª¨ë‘ ì„¤ì¹˜ë˜ì–´ ìˆë‹¤.
 
-¸ğµç È¯°æÀº webpack¿¡¼­ °ü¸® ÇÑ´Ù.
+ëª¨ë“  í™˜ê²½ì€ webpackì—ì„œ ê´€ë¦¬ í•œë‹¤.
 
-*.vue´Â vue-loader¿¡¼­ ÀĞ´Â´Ù.
+*.vueëŠ” vue-loaderì—ì„œ ì½ëŠ”ë‹¤.
 ```
 
-vue-cli °ø½Ä »çÀÌÆ® : [vue-cli](https://cli.vuejs.org/)
+vue-cli ê³µì‹ ì‚¬ì´íŠ¸ : [vue-cli](https://cli.vuejs.org/)
