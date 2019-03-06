@@ -7,18 +7,6 @@
   </head>
   <body>
     <!-- -->
-    <h1>- Sample Ajax</h1>
-    <div ng-controller="Ctl_001">
-      <p>{{ myWelcome }}</p>
-    </div>
-
-    <!-- -->
-    <h1>- Sample Ajax URL</h1>
-    <div ng-controller="Ctl_002">
-      <p>{{ value_002 }}</p>
-    </div>
-
-    <!-- -->
     <h1>- Sample Ajax Loop</h1>
     <div ng-controller="Ctl_003">
       <p ng-repeat="x in records">
@@ -29,24 +17,6 @@
 
     <script>
       var app001 = angular.module("app_001", []);
-      app001.controller("Ctl_001", function($scope, $http) {
-        $http.get("welcome.html").then(function(response) {
-          $scope.myWelcome = response.data;
-        });
-      });
-      app001.controller("Ctl_002", function($scope, $http) {
-        $http({
-          method: "GET",
-          url: "https://facebook.github.io/react-native/movies.json"
-        }).then(
-          function success(response) {
-            $scope.value_002 = response.data.movies;
-          },
-          function error(response) {
-            $scope.value_002 = response.statusText;
-          }
-        );
-      });
       app001.controller("Ctl_003", function($scope, $http) {
         $http({
           method: "GET",

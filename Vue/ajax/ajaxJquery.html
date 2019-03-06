@@ -1,75 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title></title>
     <script src="../lib/vue_2_5_21.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-</head>
-<body>
-<!-- Sample Ajax -->
-<h1>- Sample Ajax</h1>
-<div id="app">
-    <div v-for="record in records">
-        <p> {{ record.id }} {{ record.title }} {{ record.releaseYear }}</p>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Sample Ajax -->
+    <h1>- Sample Ajax</h1>
+    <div id="app">
+      <div v-for="record in records">
+        <p>{{ record.id }} {{ record.title }} {{ record.releaseYear }}</p>
+      </div>
     </div>
-</div>
-<script>
-    var mixin = {
-        ajax:{
-            data:{
-                error:0, // 오류상태
-                loading:true, // 통신상태
-                records:[] // 검색결과 저장용
-            },
-            methods:{
-                getData:function(){
-                    var _this = this;
-                    _this.loading = true;
-                    $.ajax({
-                        url: _this.request.url,
-                        type: 'GET',
-                        dataType: 'JSON',
-                        timeout : 30000,
-                        data:_this.request.data
-                    })
-                            .done(function(response) {
-                                // 결과를 result에 저장, 각종 상태관리에 대한 변수를 완료상태로 변경
-                                _this.error = 0;
-                                _this.loading = false;
-                                _this.records = response.movies;
-                            })
-                            .fail(function(error) {
-                                // 통신오류시 다시 시도
-                                // 재시도 횟수가 지정된 수에 도달하면 상태관리에 대한 변수를 업데이트 ajax중지
-                                if(_this.error <= 5){
-                                    _this.error++;
-                                    _this.getData();
-                                }else{
-                                    _this.error = true;
-                                    _this.loading = false;
-                                }
-                            });
-                }
-            },
-            mounted:function(){
-                // Ajax 실행
-                this.getData();
+    <script>
+      var mixin = {
+        ajax: {
+          data: {
+            error: 0, // 오류상태
+            loading: true, // 통신상태
+            records: [] // 검색결과 저장용
+          },
+          methods: {
+            getData: function() {
+              var _this = this;
+              _this.loading = true;
+              $.ajax({
+                url: _this.request.url,
+                type: "GET",
+                dataType: "JSON",
+                timeout: 30000,
+                data: _this.request.data
+              })
+                .done(function(response) {
+                  // 결과를 result에 저장, 각종 상태관리에 대한 변수를 완료상태로 변경
+                  _this.error = 0;
+                  _this.loading = false;
+                  _this.records = response.movies;
+                })
+                .fail(function(error) {
+                  // 통신오류시 다시 시도
+                  // 재시도 횟수가 지정된 수에 도달하면 상태관리에 대한 변수를 업데이트 ajax중지
+                  if (_this.error <= 5) {
+                    _this.error++;
+                    _this.getData();
+                  } else {
+                    _this.error = true;
+                    _this.loading = false;
+                  }
+                });
             }
+          },
+          mounted: function() {
+            // Ajax 실행
+            this.getData();
+          }
         }
-    }
-    var app = new Vue({
-        el:'#app',
+      };
+      var app = new Vue({
+        el: "#app",
         mixins: [mixin.ajax],
-        data:{
-            request:{
-                url:"https://facebook.github.io/react-native/movies.json", // 호출 url
-                data:{ // 요청 데이터
-                    date:'2017/10/11'
-                }
+        data: {
+          request: {
+            url: "https://facebook.github.io/react-native/movies.json", // 호출 url
+            data: {
+              // 요청 데이터
+              date: "2017/10/11"
             }
+          }
         }
-    });
-</script>
-</body>
+      });
+    </script>
+  </body>
 </html>

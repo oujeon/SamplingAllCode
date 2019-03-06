@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title></title>
     <script src="https://unpkg.com/vue@2.5.21/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
-</head>
-<body>
-<!-- Sample Ajax -->
-<h1>- Sample Ajax</h1>
-<div id="app">
-    <div v-for="record in records">
-        <p> {{ record.id }} {{ record.title }} {{ record.releaseYear }}</p>
+  </head>
+  <body>
+    <!-- Sample Ajax -->
+    <h1>- Sample Ajax</h1>
+    <div id="app">
+      <div v-for="record in records">
+        <p>{{ record.id }} {{ record.title }} {{ record.releaseYear }}</p>
+      </div>
     </div>
-</div>
-<script>
-    var mixin = {
-        ajax:{
-            data:{
-                error:0, // 오류상태
-                loading:true, // 통신상태
-                records:[] // 검색결과 저장용
-            },
-            methods:{
-                getData:function(){
-                    var _this = this;
-                    _this.loading = true;
-                    this.$http
-                            .get("https://facebook.github.io/react-native/movies.json")
-                            .then(function(response) {
-                                console.log(response.body.movies);
-                                this.records = response.body.movies;
-                            });
-                }
-            },
-            mounted:function(){
-                // Ajax 실행
-                this.getData();
+    <script>
+      var mixin = {
+        ajax: {
+          data: {
+            error: 0, // 오류상태
+            loading: true, // 통신상태
+            records: [] // 검색결과 저장용
+          },
+          methods: {
+            getData: function() {
+              var _this = this;
+              _this.loading = true;
+              this.$http
+                .get("https://facebook.github.io/react-native/movies.json")
+                .then(function(response) {
+                  console.log(response.body.movies);
+                  this.records = response.body.movies;
+                });
             }
+          },
+          mounted: function() {
+            // Ajax 실행
+            this.getData();
+          }
         }
-    }
-    var app = new Vue({
-        el:'#app',
+      };
+      var app = new Vue({
+        el: "#app",
         mixins: [mixin.ajax],
-        data:{
-            request:{
-                url:"https://facebook.github.io/react-native/movies.json", // 호출 url
-                data:{ // 요청 데이터
-                    date:'2017/10/11'
-                }
+        data: {
+          request: {
+            url: "https://facebook.github.io/react-native/movies.json", // 호출 url
+            data: {
+              // 요청 데이터
+              date: "2017/10/11"
             }
+          }
         }
-    });
-</script>
-</body>
+      });
+    </script>
+  </body>
 </html>

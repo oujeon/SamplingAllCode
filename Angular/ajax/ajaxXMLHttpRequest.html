@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app_001">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="../lib/angularjs_1_7_5.js"></script>
+  </head>
+  <body>
+    <!-- -->
+    <h1>- Sample Ajax Loop</h1>
+    <div ng-controller="Ctl_003">
+      <p ng-repeat="x in records">
+        {{ x.title }}
+      </p>
+      <br />
+    </div>
+
+    <script>
+      var app001 = angular.module("app_001", []);
+      app001.controller("Ctl_003", function($scope, $http) {
+        // don't use jquery ajax if ur using angularjs use $http service in angularjs – K.Toress Jul 8 '15 at 11:03
+        var xhr = new XMLHttpRequest();
+        var self = this;
+        xhr.open("GET", "https://facebook.github.io/react-native/movies.json");
+        xhr.onload = function() {
+          console.log(JSON.parse(xhr.responseText));
+          var responsetext = JSON.parse(xhr.responseText);
+          $scope.records = responsetext.movies;
+          console.log($scope.records);
+        };
+        xhr.send();
+      });
+    </script>
+  </body>
+</html>
