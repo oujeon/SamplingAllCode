@@ -8,7 +8,7 @@
 
 ## Intro
 
-Angularjs, Vue.js, React.js, Extjs, Javascript 
+Angularjs, Vue.js, React.js, Extjs, Javascript에 대한 sampling 모음집.
 
 ## License
 
