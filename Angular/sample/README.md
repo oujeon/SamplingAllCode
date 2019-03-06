@@ -10,16 +10,16 @@ AngularJS v1.7.5
 
 ## Connected line
 
-ng-app="*app_001*"
+ng-app="**app_001**"
 
-ng-controller="*Ctl_001*">
+ng-controller="**Ctl_001**"
 
-{{*myWelcome*}}
+{{**myWelcome**}}
 
-var app001 = angular.module('app_001', []);
+var **app001** = angular.module('**app_001**', []);
 
-app001.controller('*Ctl_001*', function ($scope, $http) {
+**app001**.controller('**Ctl_001**', function ($scope, $http) {
 
-  $scope.*myWelcome* = response.data;
+  $scope.**myWelcome** = response.data;
 
 });
