@@ -1,4 +1,5 @@
 # Sampling All Code
+
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
@@ -6,9 +7,9 @@
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
 ## Intro
-``` bash
-Angularjs, Vue.js, React.js, Extjs, Javascript¿¡ ´ëÇÑ Sampling ¸ğÀ½ÁıÀÌ´Ù.
-```
+
+Angularjs, Vue.js, React.js, Extjs, Javascriptì— ëŒ€í•œ Sampling ëª¨ìŒì§‘ì´ë‹¤.
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
