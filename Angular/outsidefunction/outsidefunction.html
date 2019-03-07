@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app_001">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <script src="../lib/angularjs_1_7_5.js"></script>
+    <script src="./outsidefunction.js"></script>
+</head>
+<body>
+<!-- -->
+<h1>Outside function</h1>
+
+<div ng-controller="Ctl001">
+    <p>Hello {{ 'world' | filter001 }}</p>
+</div>
+<script>
+    var app001 = angular.module("app_001", ['module001']);
+    /**
+     * controller는 자동으로 실행 된다.
+     */
+    app001.controller("Ctl001", function ($scope, $http) {
+
+    });
+</script>
+</body>
+</html>
