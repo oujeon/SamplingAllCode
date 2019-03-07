@@ -1,17 +1,11 @@
-# Hello World
+# Ajax
 
 ## Intro
 
-angularjs로 최초 프로그램이다.
+ajax에 대한 샘플 소스
 
 ## version
 
 AngularJS v1.7.5
 
 ## Connected line
-
-ng-app
-
-ng-model="yourName"
-
-{{yourName}}

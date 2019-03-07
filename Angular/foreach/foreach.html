@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app_001">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <script src="../lib/angularjs_1_7_5.js"></script>
+</head>
+<body>
+<h1>ForEach</h1>
+
+<div ng-controller="Ctl001">
+    <p>{{ tagData }}</p>
+</div>
+<script>
+    var app001 = angular.module("app_001", []);
+    /**
+     * controller는 자동으로 실행 된다.
+     */
+    app001.controller("Ctl001", function ($scope, $http) {
+        // 1. 중복 foreach 사용법
+        //    - 배열[오브젝트] 추출법
+        $scope.objData = [
+            {
+                "name": "Thomas",
+                "password": "thomas"
+            },
+            {
+                "name": "linda",
+                "password": "linda"
+            }
+        ];
+        angular.forEach($scope.objData, function (item, key) {
+            console.log("item : %o", item);
+            console.log("key : %o", key);
+            angular.forEach(item, function (item, key) {
+
+                console.log("item : %o", item);
+                console.log("key : %o", key);
+
+                $scope.tagData = key;
+            });
+        });
+    });
+</script>
+</body>
+</html>
