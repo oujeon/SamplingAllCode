@@ -1,9 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app_001">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title></title>
+    <script src="../lib/angularjs_1_7_5.js"></script>
 </head>
 <body>
+<!-- -->
+<h1>Function in Controller</h1>
+
+<div ng-controller="Ctl001">
+    <p>{{ tagData }}</p>
+</div>
+<script>
+    var app001 = angular.module("app_001", []);
+    /**
+     * controller는 자동으로 실행 된다.
+     */
+    app001.controller("Ctl001", function ($scope, $http) {
+
+        // 1. array 사용법
+        $scope.arrData = [];
+        // 2. object 사용법
+        $scope.objData = {};
+
+        // 3. function 사용법
+        $scope.fnScopeData = function (param) {
+            console.log("param : %o", param);
+            $scope.arrData[0] = param;
+            console.log("$scope.arrData[0] : %o", $scope.arrData[0]);
+
+            //{{tagData}}}도 $scope안에 자동으로 들어간다. 아래와 같이 접근한다.
+            $scope.tagData = param;
+        };
+        // 4. function 사용법
+        function fnPureData(param) {
+            console.log("param :%o", param);
+        }
+
+        // 5. 함수 실행 방법
+        $scope.fnScopeData("Hello World");
+        fnPureData("goodbye World");
+
+
+        // 6. isObject 사용법
+        if (angular.isObject($scope.objData)) {
+            console.log("isObject !!!");
+        }
+
+    });
+</script>
 </body>
 </html>
