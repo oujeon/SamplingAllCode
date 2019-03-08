@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../lib/react.development.js"></script>
+    <script src="../lib/react-dom.development.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<!-- 4. container -->
+<div id="div0001"></div>
+<!-- -->
+<script type="text/babel">
+    /**
+     * 1. class
+     * 대문자 아니면 에러
+     */
+    class CLASS_USERTAG001 extends React.Component {
+        /**
+         * constructor
+         * props는 예약어이다 변경하면 에러난다.
+         */
+        constructor(props) {
+
+            super(props);
+
+            // 최초 state 정의
+            this.state = {
+                header: "Header Initial state",
+                content: "Content Initial State"
+            };
+        }
+
+        /**
+         * render
+         * return 안의 내용에는 ""을 붙일수 없다.
+         */
+        render() {
+            return Hello, {this.state.header}, {this.props.name}</p>;
+        }
+    }
+    /**
+     * 2. function
+     * name은 props에 기록된다.
+     * 대문자 아니면 에러
+     * @returns {boolean}
+     */
+    function FN_USERTAG0001() {
+        return (
+            <div>
+                <CLASS_USERTAG001 name="World !!!"/>
+            </div>
+        );
+    }
+    /**
+     * 3. render
+     * div0001은 div id
+     * 대문자 아니면 에러
+     */
+    ReactDOM.render(
+              <FN_USERTAG0001 />
+            , document.getElementById("div0001")
+    );
+</script>
+</body>
+</html>
