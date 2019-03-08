@@ -1,70 +1,65 @@
-(function () {
-    'use strict';
-    var app;
+(function() {
+  "use strict";
+  var app;
 
-    app = angular.module('module001', [])
-        .directive('directive001', fnDirective001)
-        .service('service001', fnService001)
-        .provider('provider001', fnProvider001)
-        .filter('filter001', fnFilter001)
-        .run(['$templateCache', fnRun001]);
+  app = angular
+    .module("module001", [])
+    .directive("directive001", fnDirective001)
+    .service("service001", fnService001)
+    .provider("provider001", fnProvider001)
+    .filter("filter001", fnFilter001)
+    .run(["$templateCache", fnRun001]);
 
+  /**
+   * ï¿½ï¿½Æ¼ï¿½ï¿½ ï¿½Ô¼ï¿½
+   * @returns {{}}
+   */
+  function fnDirective001() {
+    return {};
+  }
 
-    /**
-     * µð·ºÆ¼ºê ÇÔ¼ö
-     * @returns {{}}
-     */
-    function fnDirective001() {
+  /**
+   * ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
+   * @returns {{}}
+   */
+  function fnService001() {
+    return {};
+  }
 
-        return {};
-    }
+  /**
+   * ï¿½ï¿½ï¿½Î¹ï¿½ï¿½Ì´ï¿½ ï¿½Ô¼ï¿½
+   * @returns {{}}
+   */
+  function fnProvider001() {
+    // ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
+    // angularjs_1_7_5.js:138 Uncaught Error: [$injector:modulerr] Failed to instantiate module app_001 due to:
+    // Error: [$injector:modulerr] Failed to instantiate module module001 due to:
+    // Error: [$injector:pget] Provider 'provider001' must define $get factory method.
+    // ï¿½Ø°ï¿½ï¿½ï¿½ :
+    // this.$get = function() {
+    //    return {};
+    // };
+    this.$get = function() {
+      return {};
+    };
+  }
 
-    /**
-     * ¼­ºñ½º ÇÔ¼ö
-     * @returns {{}}
-     */
-    function fnService001() {
+  /**
+   * ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
+   * @returns {{}}
+   */
+  function fnFilter001() {
+    // ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Ñ´ï¿½.
+    return function(param) {
+      return param + "!";
+    };
+  }
 
-        return {};
-    }
-
-    /**
-     * ÇÁ·Î¹ÙÀÌ´õ ÇÔ¼ö
-     * @returns {{}}
-     */
-    function fnProvider001() {
-
-        // ¾Æ·¡¿Í °°Àº ¿¡·¯°¡ ¹ß»ý
-        // angularjs_1_7_5.js:138 Uncaught Error: [$injector:modulerr] Failed to instantiate module app_001 due to:
-        // Error: [$injector:modulerr] Failed to instantiate module module001 due to:
-        // Error: [$injector:pget] Provider 'provider001' must define $get factory method.
-        // ÇØ°á¹æ¹ý :
-        // this.$get = function() {
-        //    return {};
-        // };
-        this.$get = function () {
-            return {};
-        };
-    }
-
-    /**
-     * ÇÊÅÍ ÇÔ¼ö
-     * @returns {{}}
-     */
-    function fnFilter001() {
-
-        // ¾Æ·¡¿Í °°ÀÌ ÇÏÁö ¾ÊÀ¸¸é ¿¡·¯°¡ ¹ß»ýÇÑ´Ù.
-        return function (param) {
-            return param + "!";
-        }
-    }
-
-    /**
-     * run ÇÔ¼ö
-     * @returns {Function}
-     */
-    function fnRun001() {
-        return "";
-    }
-
+  /**
+   * run ï¿½Ô¼ï¿½
+   * @returns {Function}
+   */
+  function fnRun001() {
+    return "";
+  }
 })();

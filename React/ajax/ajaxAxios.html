@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="../lib/react.development.js"></script>
+    <script src="../lib/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- Simple Ajax -->
+    <h1>- Simple Ajax</h1>
+    <div id="RENDER_003"></div>
+    <script type="text/babel">
+      /**
+       *
+       */
+      class USER_TAG_NAME_003 extends React.Component {
+        constructor(props) {
+          // super에 넣기
+          super(props);
+          // state에 넣기
+          this.state = {
+            error: null,
+            isLoaded: false,
+            items: []
+          };
+        }
+        componentDidMount() {
+          var _this = this;
+          _this.loading = true;
+          axios
+            .get("https://facebook.github.io/react-native/movies.json")
+            .then(function(res) {
+              console.log(res);
+              _this.records = res.data.movies;
+            })
+            .catch(function(e) {
+              console.error(e);
+            });
+        }
+        render() {
+          return <h1>Hello</h1>;
+        }
+      }
+      /**
+       *
+       * @constructor
+       */
+      function APP_003() {
+        return (
+          <div>
+            <USER_TAG_NAME_003 />
+          </div>
+        );
+      }
+      ReactDOM.render(<APP_003 />, document.getElementById("RENDER_003"));
+    </script>
+    <!-- end Simple Sample -->
+  </body>
+</html>

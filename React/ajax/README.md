@@ -1,15 +1,13 @@
-# Single File Components
+# Ajax
 
-``` bash
-vue-cli를 설치해야 한다.
+## intro
 
-vue-cli를 설치하며는 기본적으로 *.vue가 실행된다.
+ajax에 대한 다양한 예제
 
-vue-loader는 vue-cli에 모두 설치되어 있다.
+## library
 
-모든 환경은 webpack에서 관리 한다.
+Axios
+Basic
+Jquery
+XMLHttpRequest
 
-*.vue는 vue-loader에서 읽는다.
-```
-
-vue-cli 공식 사이트 : [vue-cli](https://cli.vuejs.org/)
