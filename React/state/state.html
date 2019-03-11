@@ -11,6 +11,7 @@
 <body>
 <!-- 4. container -->
 <div id="div0001"></div>
+<div id="div0002"><p>Goodbye World</p></div>
 <!-- -->
 <script type="text/babel">
     /**
@@ -23,22 +24,52 @@
          * props는 예약어이다 변경하면 에러난다.
          */
         constructor(props) {
-
+            // super(props)전에 아래와 같이 하면 에러가 난다.
+            // console.log(this.props)
             super(props);
+
+            // super(props)이후에 아래와 같이 하면 에러가 나지 않는다.
+            // super(props)을 통해서 props을 할당 하는 것 같다.
+            console.log(this.props);
 
             // 최초 state 정의
             this.state = {
                 header: "Header Initial state",
-                content: "Content Initial State"
+                content: "Content Initial State",
+                arr :['a','b', 'c']
             };
         }
 
         /**
+         * 내부에 함수을 사용하는 예
+         */
+        fnSample(){
+            return "good bye world";
+        }
+        /**
          * render
          * return 안의 내용에는 ""을 붙일수 없다.
+         * 여기서 UI의 내용이 리턴 된다.
          */
         render() {
-            return Hello, {this.state.header}, {this.props.name}</p>;
+
+            //var에 stat 할당 방법
+            var { header } = this.state;
+
+            /**
+             * 배열을 추출하는 방법 예
+             * $는 값을 출력 없으면 {item}문자열이 출력
+             * `` 을 사용
+             */
+            this.state.arr.map(function(item){
+                console.log("item : %o", `/show/${item}`);
+            })
+            // props을 수정하려면
+            // Cannot assign to read only property 'name' of object '#<Object>'
+            // 와 같은 에러가 난다. props의 수정 시점을
+            // this.props.name ="";
+
+            return <p>Hello,{this.fnSample()} , {this.state.header}, {this.props.name}</p>;
         }
     }
     /**
@@ -63,6 +94,11 @@
               <FN_USERTAG0001 />
             , document.getElementById("div0001")
     );
+
+    /**
+     * node을 삭제 하는 예
+     */
+    ReactDOM.unmountComponentAtNode(document.getElementById('div0002'))
 </script>
 </body>
 </html>
