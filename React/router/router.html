@@ -8,8 +8,39 @@
 
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="../lib/react-router-dom.js"></script>
 </head>
 <body>
+<!-- -->
+<div id="div0001"></div>
+<!-- -->
+<script type="text/babel">
 
+   class CLASS_SAMPLE001 extends React.Component {
+           constructor(props) {
+               super(props);
+               this.state = {
+               }
+           }
+           fnSample(){
+               return "";
+           }
+           render() {
+               return <p>Hello, {this.props.name}</p>;
+           }
+       }
+       function FN_SAMPLE0001() {
+           return (
+               <div>
+                   <CLASS_SAMPLE001 name="World !!!"/>
+               </div>
+           );
+       }
+       ReactDOM.render(
+                 <FN_SAMPLE0001 />
+               , document.getElementById("div0001")
+       );
+
+</script>
 </body>
 </html>
