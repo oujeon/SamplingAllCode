@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="../lib/vue_2_5_21.js"></script>
+    <script src="../lib/vue-router.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Hello App !</h1>
+      <!-- -->
+      <p>
+        <router-link to="/foo">Go to Foo</router-link>
+        <router-link to="bar">Go to Bar</router-link>
+      </p>
+      <!-- 라우터가 여기에 보여진다. -->
+      <router-view></router-view>
+    </div>
+    <script>
+      const Foo = { template: "<div>foo</div>" };
+      const Bar = { template: "<div>bar</div>" };
+
+      const routes = [
+        { path: "/foo", component: Foo },
+        { path: "/bar", component: Bar }
+      ];
+
+      const router = new VueRouter({
+        routes
+      });
+
+      const app = new Vue({
+        router
+      });
+
+      app.$mount("#app");
+    </script>
+  </body>
+</html>

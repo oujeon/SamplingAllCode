@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="../lib/angularjs_1_7_5.js"></script>
+    <script src="../lib/angular-route.js"></script>
+    <style>
+      .route-place {
+        margin-top: 10px;
+        padding: 30px;
+        height: 100%;
+        border: 2px solid #ddd;
+      }
+    </style>
+    <!-- angularjs -->
+    <script>
+      var app = angular.module("app", ["ngRoute"]);
+      app.controller("ctrl0001", function($scope) {
+      });
+      app.config(function($routeProvider) {
+        $routeProvider
+          .when("/", {
+            templateUrl: "Home.html"
+          })
+          .when("/List", {
+            templateUrl: "List.html"
+          })
+          .when("/File", {
+            templateUrl: "File.html"
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- div -->
+    <div ng-controller="ctrl0001">
+      <a href="/Angular/simplerouter/simplerouter.html">Home</a> | <a href="/Angular/simplerouter/simplerouter.html#!/List">List</a> |
+      <a href="/Angular/simplerouter/simplerouter.html#!/File">File</a>
+    </div>
+    <hr />
+    <div class="route-place" ng-view></div>
+  </body>
+</html>
