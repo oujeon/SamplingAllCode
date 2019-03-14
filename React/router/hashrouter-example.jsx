@@ -6,6 +6,7 @@
 
 // 아래의 주석을 풀면 ReactRouterDOM.HashRouter 이거 대신에 HashRouter을 쓸수 있다.
 // data-plugins="transform-es2015-modules-umd" 이거 없이도 에러나지 않는다.
+// react-router-dom안에 맨 마지막에 보며서 사용가능한 객체가 나열 되어 있다.
 // const { HashRouter, NavLink, Route } = ReactRouterDOM;
 
 // Component
