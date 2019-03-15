@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #no-width {
+            width: auto;
+        }
+
+        #width-50 {
+            width: 50%;
+        }
+
+        #width-inherit {
+            width: inherit;
+        }
+
+        /* Make results easier to see */
+        div {
+            border: 1px solid red;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<div id="no-width">
+    <p>No explicit width.</p>
+    <p class="show-used-width">..</p>
+
+    <div id="width-50">
+        <p>Explicit width: 50%.</p>
+        <p class="show-used-width">..</p>
+
+        <div id="width-inherit">
+            <p>Explicit width: inherit.</p>
+            <p class="show-used-width">..</p>
+        </div>
+    </div>
+</div>
+<script>
+    function updateUsedWidth(id) {
+        var div = document.querySelector(`#${id}`);
+        var par = div.querySelector('.show-used-width');
+        var wid = window.getComputedStyle(div)["width"];
+        par.textContent = `Used width: ${wid}.`;
+    }
+
+    function updateAllUsedWidths() {
+        updateUsedWidth("no-width");
+        updateUsedWidth("width-50");
+        updateUsedWidth("width-inherit");
+    }
+
+    updateAllUsedWidths();
+    window.addEventListener('resize', updateAllUsedWidths);123456789101112131415
+</script>
+</body>
+</html>

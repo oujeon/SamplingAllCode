@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        * {
+            margin: 0;
+        }
+        html {
+            padding: 20px;
+            font: 12px/20px Arial, sans-serif;
+        }
+        body{
+            border:10px solid black;
+        }
+        div {
+            opacity: 0.7;
+            position: relative;
+        }
+        h1 {
+            font: inherit;
+            font-weight: bold;
+        }
+        #div1,
+        #div2 {
+            border: 1px dashed #696;
+            padding: 10px;
+            background-color: #cfc;
+        }
+        #div1 {
+            z-index: 5;
+            margin-bottom: 190px;
+        }
+        #div2 {
+            z-index: 2;
+        }
+        #div3 {
+            z-index: 4;
+            opacity: 1;
+            position: absolute;
+            top: 40px;
+            left: 180px;
+            width: 330px;
+            border: 1px dashed #900;
+            background-color: #fdd;
+            padding: 40px 20px 20px;
+        }
+        #div4,
+        #div5 {
+            border: 1px dashed #996;
+            background-color: #ffc;
+        }
+        #div4 {
+            z-index: 6;
+            margin-bottom: 15px;
+            padding: 25px 10px 5px;
+        }
+        #div5 {
+            z-index: 1;
+            margin-top: 15px;
+            padding: 5px 10px;
+        }
+        #div6 {
+            z-index: 3;
+            position: absolute;
+            top: 20px;
+            left: 180px;
+            width: 150px;
+            height: 125px;
+            border: 1px dashed #009;
+            padding-top: 125px;
+            background-color: #ddf;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <h1>Division Element #1</h1>
+    <code>position: relative;<br/>
+        z-index: 5;</code>
+</div>
+
+<div id="div2">
+    <h1>Division Element #2</h1>
+    <code>position: relative;<br/>
+        z-index: 2;</code>
+</div>
+
+<div id="div3">
+    <div id="div4">
+        <h1>Division Element #4</h1>
+        <code>position: relative;<br/>
+            z-index: 6;</code>
+    </div>
+
+    <h1>Division Element #3</h1>
+    <code>position: absolute;<br/>
+        z-index: 4;</code>
+
+    <div id="div5">
+        <h1>Division Element #5</h1>
+        <code>position: relative;<br/>
+            z-index: 1;</code>
+    </div>
+    <div id="div6">
+        <h1>Division Element #6</h1>
+        <code>position: absolute;<br/>
+            z-index: 3;</code>
+    </div>
+</div>
+<pre>
+
+    이전 예제에서(z-index 적용) 특정 DIV의 렌더링 순서는 z-index 속성 값에 영향을 받는다는것을 알았다. 이 현상은 DIV들이 가진 특별한 속성 때문에 그렇다. 바로 쌓임 맥락(stacking context)을 형성한다는 것이다.
+
+노트:
+•DIV #4는 DIV #1보다 z-index 속성 값이 더 크지만 DIV #1보다 아래에 렌더링 되었다. 왜냐하면 DIV #1의 z-index 속성 값인 5는 뿌리 엘리먼트의 쌓임 맥락 안에서 유효하나 DIV #4의 z-index 속성 값인 6은 DIV #3의 쌓임 맥락 안에서만 유효하기 때문이다. DIV #4는 자신이 속하는 DIV #3의 z-index 속성 값이 3이므로 DIV #1 아래에 쌓였다.
+•같은 이유로 DIV #2는 DIV #5 아래에 렌더링 되었다. DIV #5는 DIV #2보다 z-index 값이 작지만 뿌리 엘리먼트의 쌓임 맥락안에서 유효한 DIV #5가 속한 DIV #3의 z-index 값이 DIV #2의 z-index 값 보다 더 크기 때문이다.
+•DIV #3의 z-index 속성 값인 4는 DIV #4, DIV #5, DIV #6의 z-index 속성값과 독립적이다. 왜냐하면 다른 쌓임 맥락에 속해있기 때문이다.
+•렌더링 순서를 이해하는 쉬운 방법은 z-index를 "버전 번호" 처럼 생각하는 것이다. 자식 엘리먼트는 부모 엘리먼트 버전 번호의 마이너 버전이다. 이 방법은 왜 z-index가 1인 DIV #5가 z-index가 2인 DIV #2 위에 쌓였는지, z-index가 6인 DIV #4가 z-index가 5인 DIV #1 아래에 쌓였는지 이해하게 해준다. 우리 예제에서는 ◦뿌리 엘리먼트 ◦DIV #2 - z-index가 2
+◦DIV #3 - z-index가 4 ◦DIV #5 - z-index가 1인데 z-index가 4인 엘리먼트 아래에서 쌓였으므로 렌더링 순서는 4.1이다.
+◦DIV #6 - z-index가 3인데 z-index가 4인 엘리먼트 아래에서 쌓였으므로 렌더링 순서는 4.3이다.
+◦DIV #4 - z-index가 6인데 z-index가 4인 엘리먼트 아래에서 쌓였으므로 렌더링 순서는 4.6이다.
+
+◦DIV #1 - z-index가 5
+
+ </pre>
+
+
+</body>
+</html>

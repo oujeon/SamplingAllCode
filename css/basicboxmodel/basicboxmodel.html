@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background-color: yellow;
+            border : 1px solid gray;
+        }
+        p{
+            background-color: green;
+            border : 10px solid black;
+        }
+        .box{
+
+           /*
+           margin area : 바깥 여백 경계 margin edge가 감싼 영역
+           body와 margin area의 사이간격을 조절한다.
+           */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+
+            /*
+            border area은 테두리 경계border edge가 감싼 영역
+            margin area와 padding area 사이의 간격을 조절한다.
+             */
+            border : 10px solid gray;
+
+            /*
+            padding area :  안쪽 여백 경계 padding edge가 감싼 영역
+
+            border area 와 content area 사이의 간격을 조절한다.
+            */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            /*
+            content area :  콘텐츠 경계content edge가 감싼 영역
+            padding area와 내용물(이미지, 글자, ...)와의 간격을 조절한다.
+            여기서는 내용물이라는 것은 <p>로 감싼 P tag을 말한다.
+            content-box 와 border-box 차의점에 대해서 숙지 할 것
+            */
+            width : 500px;
+            min-width : 500px;
+            max-width : 500px;
+            height : 500px;
+            min-height : 500px;
+            max-height : 500px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>body -> margin area -> border area -> padding area -> content area -> content</h1>
+<div class="box">
+   <p>Hello World</p>
+</div>
+</body>
+</html>
