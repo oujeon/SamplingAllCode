@@ -1,0 +1,63 @@
+<!--
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+<ol> 요소 (or HTML Ordered List Element) 는 정렬된 리스트의 항목들을 나타냅니다.
+일반적으로, 정렬된 리스트의 항목들은 앞에 번호와 함께 표시되며,
+이 번호는 순자,문자,로마 숫자,간단한 점과 같이 어떤 형태로든 나타날수 있습니다.
+
+<dl> 요소 (or HTML Description List Element) 는 여러 짝의 용어와 정의를 둘러쌉니다.
+이 요소의 일반적인 용법은 어휘를 구현하거나 메타데이터(키-값 짝의 목록)을 표시하는 것입니다.
+
+
+margin-top: 0;
+margin-bottom: 1rem; 는
+
+크롬의 개발자도구에서 확인 해보면
+margin top은 0px margin bottom은 16px(1rem)으로 되었다.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ol,
+        ul,
+        dl {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border:1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+<ol>
+    <li>first item</li>
+    <li>second item      <!-- Look, the closing </li> tag is not placed here! -->
+        <ul>
+            <li>second item first subitem</li>
+            <li>second item second subitem</li>
+            <li>second item third subitem</li>
+        </ul>
+    </li>                <!-- Here is the closing </li> tag -->
+    <li>third item</li>
+</ol>
+
+<dl>
+    <dt>Firefox</dt>
+    <dd>A free, open source, cross-platform, graphical web browser
+        developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+
+    <!-- other terms and definitions -->
+</dl>
+</body>
+</html>

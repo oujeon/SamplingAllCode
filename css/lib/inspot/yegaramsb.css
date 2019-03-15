@@ -1,0 +1,747 @@
+
+    @charset "utf-8";
+
+    /* sub visual */
+    #subVisualWrap { background-repeat:no-repeat; background-position:0 bottom; background-size:100% auto; }
+
+    /* 예금상품 tit-visual */
+    #subVisualWrap.sub1-1 { background-image:url(../images/page/bg_sub01.png); } /* 예금상품 메인 */
+    #subVisualWrap.sub1-2 { background-image:url(../images/page/bg_sub01_2.png); } /* 보호금융상품등록부 */
+    #subVisualWrap.sub1-3 { background-image:url(../images/page/bg_sub01_3.png); } /* 예금가이드 */
+    #subVisualWrap.sub1-4 { background-image:url(../images/page/bg_sub01_4.png); } /* 예금자보호법 */
+    #subVisualWrap.sub1-5 { background-image:url(../images/page/bg_sub01_5.png); } /* 비대면 계좌개설 */
+
+    /* 대출상품 tit-visual */
+    #subVisualWrap.sub2-1 { background-image:url(../images/page/bg_sub02.png); } /* 대출상품 메인 */
+    #subVisualWrap.sub2-2 { background-image:url(../images/page/bg_sub02_2.png); } /* 대출가이드 */
+    /*#subVisualWrap.sub2-3 { background-image:url(../images/page/bg_sub02_3.png); }*/ /* 논스톱대출 */
+    #subVisualWrap.sub2-4 { background-image:url(../images/page/bg_sub02_4.png); } /* 상담신청 */
+    #subVisualWrap.sub2-5 { background-image:url(../images/page/bg_sub02_5.png); } /* 대출신청 */
+    #subVisualWrap.sub2-6 { background-image:url(../images/page/bg_sub02_6.png); } /* 한도조회 */
+    #subVisualWrap.sub-default { background-image:url(../images/page/bg_loan.png); } /* 상담신청, 대출신청 */
+
+    /* 금융소비자포털 tit-visual */
+    #subVisualWrap.sub3-1 { background-image:url(../images/page/bg_sub03_1.png); } /* 민원센터 */
+    #subVisualWrap.sub3-2 { background-image:url(../images/page/bg_sub03_2.png); } /* 금융소비자보호 체계 */
+    #subVisualWrap.sub3-3 { background-image:url(../images/page/bg_sub03_3.png); } /* 개인정보보호 */
+    #subVisualWrap.sub3-4 { background-image:url(../images/page/bg_sub03_4.png); } /* 금융사기 유의사항 */
+    #subVisualWrap.sub3-5 { background-image:url(../images/page/bg_sub03_5.png); } /* 유능함 금융정보  */
+    #subVisualWrap.sub3-6 { background-image:url(../images/page/bg_sub03_6.png); } /* 금리인하요구권 */
+    #subVisualWrap.sub3-7 { background-image:url(../images/page/bg_sub03_7.png); } /* 금융주소 한번에  */
+    #subVisualWrap.sub3-8 { background-image:url(../images/page/bg_sub03_8.png); } /* 전자금융안내  */
+    #subVisualWrap.sub3-9 { background-image:url(../images/page/bg_sub03_9.png); } /* 안전한 전자금융  */
+    #subVisualWrap.sub3-10 { background-image:url(../images/page/bg_sub03_10.png); } /* 채권주심업무 */
+    #subVisualWrap.sub3-11 { background-image:url(../images/page/bg_sub03_11.png);   } /* 대출계약 철회권 */
+
+    /* 상품공시실 tit-visual */
+    #subVisualWrap.sub4-1 { background-image:url(../images/page/bg_sub04_1.png); } /* 이용매뉴얼 */
+    #subVisualWrap.sub4-2 { background-image:url(../images/page/bg_sub04_2.png); } /* 예금상품 */
+    #subVisualWrap.sub4-3 { background-image:url(../images/page/bg_sub04_3.png); } /* 대출상품 */
+    #subVisualWrap.sub4-4 { background-image:url(../images/page/bg_sub04_4.png); } /* 부대비용 */
+    #subVisualWrap.sub4-5 { background-image:url(../images/page/bg_sub04_5.png); } /* 모집인 수수료율 */
+
+    /* 고객센터 tit-visual */
+    #subVisualWrap.sub5-1 { background-image:url(../images/page/bg_sub05_1.png); } /* 공지사항 */
+    #subVisualWrap.sub5-2 { background-image:url(../images/page/bg_sub05_2.png); } /* 제증명서 발급신청 */
+    #subVisualWrap.sub5-3 { background-image:url(../images/page/bg_sub05_3.png); } /* 서식 및 약관자료실 */
+    #subVisualWrap.sub5-4 { background-image:url(../images/page/bg_sub05_4.png); } /* 자주하는질문 FAQ */
+    #subVisualWrap.sub5-5 { background-image:url(../images/page/bg_sub05_5.png); } /* ARS구성도 */
+    #subVisualWrap.sub5-7 { background-image:url(../images/page/bg_sub05_7.png); } /* 온라인 서류제출 */
+    #subVisualWrap.sub5-9 { background-image:url(../images/page/bg_sub05_9.png); } /* 멤버십서비스 */
+    #subVisualWrap.sub5-10 { background-image:url(../images/page/bg_sub05_10.png); } /* 금융계산기 */
+    #subVisualWrap.sub5-11 { background-image:url(../images/page/bg_sub05_11.png); } /* 공인인증센터 */
+    #subVisualWrap.sub5-12 { background-image:url(../images/page/bg_sub05_12.png); } /* 보안프로그램 설치 */
+
+    /* 저축은행 소개 tit-visual */
+    #subVisualWrap.sub6-1 { background-image:url(../images/page/bg_sub06_1.png); } /* 예가람저축은행소개 */
+    #subVisualWrap.sub6-2 { background-image:url(../images/page/bg_sub06_2.png); } /* 경영공시 */
+    #subVisualWrap.sub6-3 { background-image:url(../images/page/bg_sub06_3.png); } /* 윤리경영 */
+    #subVisualWrap.sub6-4 { background-image:url(../images/page/bg_sub06_4.png); } /* 흥국금융가족 */
+    #subVisualWrap.sub6-5 { background-image:url(../images/page/bg_sub06_5.png); } /* CI소개 */
+    #subVisualWrap.sub6-6 { background-image:url(../images/page/bg_sub06_6.png); } /* 인재채용 */
+    #subVisualWrap.sub6-7 { background-image:url(../images/page/bg_sub06_7.png); } /* 영업점안내 */
+
+
+    /* 상품메인 */
+    .prod-main-tit { height:295px; padding-top:60px; margin-bottom:10px; text-align:center; }
+    .prod-main-tit .prod-select { display:inline-block; margin-top:38px; padding:16px 35px; background:rgba(255, 255, 255, 0.6); border:6px solid #0087d4; border-radius:37px; }
+    .prod-main-tit .prod-select label { margin-bottom:0; margin-left:25px;  }
+    .prod-main-tit .prod-select label:first-child { margin-left:0; }
+    .prod-main-tit .prod-select .form-wrap label { margin-bottom:0; line-height:44px; vertical-align:top; }
+    .prod-main-tit .prod-select .form-wrap button { margin-left:5px; vertical-align:top; }
+
+    .prod-count { font-weight:bold; color:#0087d4; font-size:23px; letter-spacing:-0.08em; }
+    .prod-count span { margin-left:3px; font-size:18px; letter-spacing:-1px; }
+    .prod-main h3 a:after { display:inline-block; content:''; width:30px; height:30px; background:url('../images/page/btn_prod.png') no-repeat 0 0; margin-left:10px; }
+    .prod-main h3 img { width:auto; height:31px; }
+    .prod-main + .prod-count { margin-top:60px; }
+    .prod-main { margin-top:10px; border-top:2px solid #4f575e; }
+    .prod-main li { position:relative; padding:30px 40px 25px; /*margin:0 0 20px 20px;*/ background-color:rgba(244, 244, 244, 0.6); border-bottom:2px solid #d6dadc; }
+    .prod-main .desc { margin-top:15px; padding-right:370px; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; word-wrap:break-word; }
+    .prod-main .hashtag { white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+    .prod-main .hashtag span { margin-left:10px; color:#626c74; font-size:12px; font-weight:bold; line-height:16px; letter-spacing:-0.7px; }
+    .prod-main .hashtag span:first-child { margin-left:0; }
+    .prod-main .rate { position:absolute; top:33px; left:750px; }
+    .prod-main .rate > div { float:left; }
+    .loan-wrap .prod-main .rate > div { width:172px; }
+    .loan-wrap .prod-main .rate > .type2 { width: auto !important; }
+    .prod-main .rate > div + div { margin-left:25px; }
+    .prod-main .rate span { font-size:19px; font-weight:bold; color:#39434d; letter-spacing:-0.13em;}
+    .prod-main .rate p { font-size:20px; font-weight:bold; color:#ec0089; }
+    .prod-main .rate p strong { position:relative; bottom:-4px; margin:0 5px; font-size:30px; }
+    .loan-wrap .prod-main .rate p strong { margin:0; }
+    .loan-wrap .prod-main .rate p, .loan-wrap .prod-main .rate p strong { bottom:inherit; font-size:25px; letter-spacing:-0.05em; }
+    .prod-more { display:inline-block; height:29px; position:absolute; top:50%; right:80px; margin-top:-15px; padding-right:47px; background:url('../images/page/ico_prod_more.png') no-repeat right 0; font-size:20px; color:#495057; }
+
+    .prod-main-tit.loan .prod-select { border-color:#ec008c; }
+    .prod-main-tit.loan .prod-select label, .prod-main-tit.loan .prod-select .select-wrap { display:inline-block; }
+    .prod-main-tit.loan .prod-select .form-wrap { margin-top:20px; }
+    .prod-main-tit.loan .prod-select .select-wrap { width:260px; margin-left:5px; }
+    .loan-wrap .prod-count { color:#0087d4; }
+
+
+    /* 상품소개 */
+    .prod-visual { position:relative; height:380px; }
+    .prod-visual .prod-tit { max-width:700px; padding:65px 30px 0 0; }
+    .prod-visual .desc { margin-top:20px; }
+    .prod-visual .hashtag span { margin-left:10px; font-size:14px; font-weight:bold; line-height:26px; }
+    .prod-visual .hashtag span:first-child { margin-left:0; }
+    .prod-visual .btn-wrap { margin-top:30px; text-align:left; }
+    .prod-visual .prod-more { position:inherit; top:inherit; right:inherit; margin-top:20px; font-size:22px;}
+    .prod-visual .character { position:absolute; right:40px; bottom:-37px; }
+    .prod-info .prod-cts { padding-bottom:85px; border-bottom:2px solid #b3bbc0; }
+    .prod-info .prod-cts .table-style thead th { background:#eee; }
+    .prod-date { margin-top:5px; }
+    .prod-date:after { display:block; content:""; clear:both; }
+    .prod-date span { color:#626c74; font-size:12px; font-weight:bold; letter-spacing:-0.7px; line-height:16px; }
+    .prod-date .date { float:left; }
+    .prod-date .compliance { float:right; }
+    .prod-info table { margin-top:10px; }
+    .prod-info table li { line-height:26px; }
+
+    .sub-menu-wrap { width:1140px;  margin:35px auto 0 auto; }
+    .sub-menu-wrap .btn-wrap { margin-top:60px; }
+    .sub-menu-wrap p { padding-bottom:5px; margin-bottom:20px; border-bottom:2px solid #495058; color:#495058; font-size:16px; font-weight:bold; text-align:left; letter-spacing:-0.1em; }
+    .sub-menu { height:55px; text-align:center; }
+    .sub-menu .bx-wrapper { max-width:1140px !important; padding: 0 48px 0 54px;}
+    .sub-menu .bx-viewport ul { margin-left:-2px; }
+    .sub-menu .bx-viewport li { position:relative; }
+    .sub-menu .bx-viewport li a { display:inline-block; width:255px; background:#f9f9f9; padding:18px 8px; border-radius:30px; font-size:18px; font-weight:bold; letter-spacing:-1.8px; color:#333; }
+    .sub-menu .bx-viewport li a span { display:block; font-size:16px; color:#495057; }
+    .sub-menu .bx-wrapper .bx-controls-direction a { width:46px; height:46px; margin-top:-23px; line-height:44px; border:1px solid #495057; border-radius:30px; color:#495057; font-size:14px; z-index:7;}
+    .sub-menu .bx-wrapper .bx-controls-direction a:hover { border:1px solid #ec008c; color:#ec008c; }
+    .sub-menu .bx-wrapper .bx-prev { left:0; background:url('../images/common/ico_prev_off.png') no-repeat center; }
+    .sub-menu .bx-wrapper .bx-next { right:0; background:url('../images/common/ico_next_off.png') no-repeat center; }
+    .sub-menu .bx-wrapper .bx-prev:hover { background:url('../images/common/ico_prev_on.png') no-repeat center; }
+    .sub-menu .bx-wrapper .bx-next:hover { background:url('../images/common/ico_next_on.png') no-repeat center; }
+
+    /* 논스톱자동대출 */
+    .nonstop-tit { text-align:center; }
+    .nonstop-desc { margin:50px 0 60px; text-align:center; }
+    .nonstop-wrap .app-wrap { position:relative; height:600px; background:url('../images/page/img_nonstop_app.png') no-repeat 0 0; margin-bottom:95px;}
+    .nonstop-wrap .app-wrap .qr-box { position:absolute; width:160px; }
+    .nonstop-wrap .app-wrap .qr-box span { display:block; margin-top:5px; font-family:arial; font-size:20px; color:#495057; }
+    .nonstop-wrap .app-wrap .qr-box.ios { top:300px; right:130px;}
+    .nonstop-wrap .app-wrap .qr-box.androide { top:366px; right:0;}
+    .sms-wrap { background:#fff; padding:40px 0 40px 95px; margin-top:20px; }
+    .sms-wrap * { vertical-align: middle; }
+    .sms-wrap .select-wrap { display:inline-block; width:150px; }
+    .sms-wrap input[type='text'] { width:480px; margin-right:10px;}z
+                                                                   .sms-wrap p { margin-top:10px; }
+    .nonstop-wrap .nonstop-step { margin:60px 0 30px; }
+
+    /* 보호금융상품등록부 */
+    .tab-page .contents-area .prod-date { margin-top:80px; padding-top:6px; border-top:2px solid #b3bbc0; }
+    .prod-register-wrap p.star { display:inline-block; float:right; text-align:right;}
+
+    /* 예금거래기본약관 */
+    .txt-box { padding:40px 80px; border:1px solid #b3bbc0; border-top:1px solid #495057; background:#fff; text-align:center; }
+    .terms-cts { margin-top:40px; }
+    .terms-cts .btn-list { overflow:hidden; width:970px; margin-left:-20px;}
+    .terms-cts .btn-list li { float:left; width:222px; margin:0 0 20px 20px; }
+    .terms-cts .btn-list.type2 li { width:303px; }
+    .terms-cts .btn-list .btn-popup { width:100%; }
+    .terms-txt { margin-top:60px; background:#fff; padding:40px; }
+    .terms-txt dt { margin-top:25px; font-weight:bold;}
+    .terms-txt dt:first-child { margin-top:0; }
+    /*.terms-txt dd ol, .terms-txt dd ul, .terms-txt dd p { margin-left:17px; }*/
+    .tab-wrap + .terms-txt { margin-top:0; }
+
+    /* 예금자보호법 */
+    .protect-img { width:648px; height:601px; margin:0 auto 60px auto; background:url('../images/page/img_protect.png') no-repeat 0 0; }
+    .protect-wrap .prod-info .prod-cts { padding-bottom:0; border-bottom:none; }
+
+    /* 상담신청 */
+    .consultation-wrap {}
+    .line-box { padding-top:40px; margin-top:40px; border-top:1px solid #ccc; }
+    .line-box .tit-txt { padding-bottom:20px; color:#333; font-size:20px; line-height:28px; text-align:center; letter-spacing:-1.8px; }
+    .agree-wrap .agree-area { /*margin-top:20px; border-top:1px solid #ccc;*/ font-size:14px; line-height:24px; }
+    .agree-wrap .agree-cts { padding:40px; background:#fff; }
+    .agree-wrap .agree-cts table { margin-top:10px; }
+    .agree-wrap .agree-check { margin-top:30px; text-align:center; }
+    .agree-wrap .all-agree { text-align:center; }
+    .agree-wrap .all-agree .check { font-size:16px; }
+    .agree-wrap .agree-box { margin-top:40px; padding-top:40px; border-top:1px solid #ccc;  }
+    .agree-wrap .agree-box label { font-size:14px; }
+
+    /* 대출신청 사전문진 */
+    .question-wrap .question-list { background:#fff; margin:20px 0; padding:0 60px; }
+    .question-wrap .question-list li { padding:30px 0 40px; border-top:2px solid #e6e6e6; }
+    .question-wrap .question-list li:first-child { border-top:none; }
+    .question-wrap .question-list span { display:inline-block; vertical-align:top; }
+    .question-wrap .question-list .num { width:46px; height:46px; border:1px solid #575e64; border-radius:50%; text-align:center; line-height:44px; z}
+    .question-wrap .question-list .cont { width:475px; margin-left:30px; }
+    .question-wrap .question-list .radio-area { margin:15px 0 0 60px; }
+    .question-wrap .question-list .radio-area .radio { margin-left:50px; }
+    .question-wrap .question-list .warning .num { border:1px solid #DC0082; color:#DC0082; }
+    .question-wrap .question-list .warning .cont { color:#DC0082; }
+    .question-wrap .sign-area { margin-top:40px; text-align:center; }
+    .question-wrap .sign-area .sign-input { margin-top:25px; }
+    .question-wrap .sign-area .sign-input .date { margin-right:50px; }
+    .question-wrap .sign-area .sign-input input[type='text'] { width:260px; margin-left:15px; }
+
+    /* 대출신청 */
+    .apply-wrap { position:relative; }
+    .required-txt { position:absolute; top:0; right:0; color:#351b6f; font-size:13px; line-height:1; letter-spacing:-0.7px; }
+    .required-wrap .tit, .required-wrap .list-tit, .required-wrap .required-txt { display:inline-block; }
+    .required-wrap .required-txt { position:inherit; margin-left:5px; }
+    .input-wrap .grid-wrap { margin-top:40px; padding-top:40px; border-top:1px solid #ccc; }
+    .input-wrap .grid-wrap:first-child { padding:0; margin:0; border-top:none; }
+    .input-wrap .grid-wrap .grid2 { margin-top:30px; }
+    .input-wrap .grid-wrap .grid2:first-child { margin-top:0; }
+    .input-wrap .grid1 { margin-top:30px; }
+    .input-wrap .grid-wrap .grid1:first-child { margin-top:0; }
+    .step-auth { padding-top:45px; }
+    .step-auth .certificate { padding-top:45px; }
+    .step-auth .certificate .list-tit { margin-top:0; margin-bottom:30px; }
+    .auth-list { width:100%; text-align:center; }
+    .auth-list .ctm-radio { width:100%; }
+    .auth-list .ctm-radio label:before { width:100%; height:100%; background-position:bottom center; }
+    .auth-list .ctm-radio input:focus + label:before { width:20px; height:20px; top:auto; bottom:-2px; left:calc(50% - 2px); margin-left:-9px; }
+    .auth-list li .ctm-radio.checked label { color:#ec008c; }
+    .auth-list li.auth1 .ctm-radio.checked label:after { background:url("../images/page/img_auth1_on.png") no-repeat center 0; }
+    .auth-list li.auth2 .ctm-radio.checked label:after { background:url("../images/page/img_auth2_on.png") no-repeat center 0; }
+    .auth-list li.auth3 .ctm-radio.checked label:after { background:url("../images/page/img_auth3_on.png") no-repeat center 15px; }
+    .auth-list li.auth4 .ctm-radio.checked label:after { background:url("../images/page/img_auth4_on.png") no-repeat center 0; }
+    .auth-list li.auth5 .ctm-radio.checked label:after { background:url("../images/page/img_auth5_on.png") no-repeat center 20px; }
+    .auth-list li { position:relative; display:inline-block; width:160px; text-align:center; }
+    .auth-list li label { display:block; padding:120px 0 50px; background-position:center bottom; font-weight:bold; cursor:pointer; }
+    .auth-list li label:after { position:absolute; top:0; left:0; display:block; width:100%; height:120px; content:""; }
+    .auth-list li.auth1 label:after { background:url("../images/page/img_auth1.png") no-repeat center 0; }
+    .auth-list li.auth2 label:after { background:url("../images/page/img_auth2.png") no-repeat center 0; }
+    .auth-list li.auth3 label:after { background:url("../images/page/img_auth3.png") no-repeat center 15px; }
+    .auth-list li.auth4 label:after { background:url("../images/page/img_auth4.png") no-repeat center 0; }
+    .auth-list li.auth5 label:after { background:url("../images/page/img_auth5.png") no-repeat center 20px; }
+    .auth-list li:hover span, .auth-list li label.r-on span { color:#ec008c; }
+    .auth-list li.auth1:hover label:after, .auth-list li.auth1 label.r-on:after { background:url("../images/page/img_auth1_on.png") no-repeat center 0; }
+    .auth-list li.auth2:hover label:after, .auth-list li.auth2 label.r-on:after { background:url("../images/page/img_auth2_on.png") no-repeat center 0; }
+    .auth-list li.auth3:hover label:after, .auth-list li.auth3 label.r-on:after { background:url("../images/page/img_auth3_on.png") no-repeat center 15px; }
+    .auth-list li.auth4:hover label:after, .auth-list li.auth4 label.r-on:after { background:url("../images/page/img_auth4_on.png") no-repeat center 0; }
+    .auth-list li.auth5:hover label:after, .auth-list li.auth5 label.r-on:after { background:url("../images/page/img_auth5_on.png") no-repeat center 20px; }
+    .auth-list .radio.focus:before { top:inherit; bottom:-2px; left:50%; margin-left:-12px; }
+    .loan-input-wrap .agree-wrap { margin-top:20px; }
+    .loan-input-wrap .agree-wrap .items-group .rice { margin-top:20px; font-size:14px; line-height:1.5; }
+    .agree-wrap .agree-box .items-group { margin-top:45px; padding:40px 0 45px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
+    .agree-wrap .agree-box .items-wrap { margin-top:40px; }
+    .agree-wrap .agree-box .items-wrap:first-child { margin-top:0; }
+    .agree-wrap .agree-box .items-wrap.option, .agree-wrap .agree-box .items-wrap.manual { margin-top:60px; }
+    .agree-wrap .agree-box .items-wrap .item-tit { font-size:16px; }
+    .agree-wrap .agree-box .items-wrap .items:after { display:block; content:""; clear:both; }
+    .agree-wrap .agree-box .items-wrap .items .item-check { float:left; width:50%; }
+    .agree-wrap .agree-box .items-wrap .items .item-check strong { display:block; padding-top:10px; font-size:14px; }
+    .agree-wrap .agree-box .items-wrap .item-check div { margin-top:5px; }
+    .agree-wrap .agree-box button.tiny { margin-left:5px; }
+    .loan-input-wrap .guide-means { display:none; margin-left:25px; }
+    .loan-input-wrap .guide-means .type .check { margin-right:20px; }
+    .kakao-layer .pop-cts { padding-top:40px; }
+    .kakao-layer .pay-time { height:100px; padding-left:230px; background:url('../images/page/img_auth4.png') no-repeat 140px 0; color:#333; }
+    .kakao-layer .pay-time p { padding-top:10px; margin-bottom:15px; font-size:25px; }
+    .kakao-layer .pay-time span { font-size:50px; }
+    .agreement-layer strong { text-decoration:underline; }
+    .agreement-layer dl dd { padding-left:15px; }
+    .manual-layer table { margin-bottom:20px; }
+    .manual-layer dt { margin-top:15px; }
+    .manual-layer dt:first-child { margin-top:0; }
+    /*.manual-layer dd { padding-left:15px; }
+    .manual-layer dd ul { padding-left:15px; }*/
+
+    /* 대출신청 완료 */
+    .comp-wrap .cts-box, .cts-box.wide { padding:80px 40px; }
+    .comp-wrap p { font-size:20px; line-height:1.4; }
+    .cts-box { padding:40px; background:#fff; text-align:center; }
+    .cts-box .box-info { margin-bottom:25px; font-size:24px; color:#351b6f; letter-spacing:-1.2px; }
+    .cts-box .box-info [class*='accent'] { background:#341b6f; color:#fff !important; padding:5px 6px 6px; border-radius:10px; }
+    .cts-box .box-line { display:inline-block; position:relative; min-width:200px; padding:0 10px 8px; border-bottom:2px solid #ec008c; color:#495057; font-size:32px; line-height:1.2; }
+    .cts-box .box-line + .box-txt { padding-top:30px; }
+    .cts-box .box-line span { display:block; font-size:20px; color:#333; letter-spacing:-0.08em; }
+    .cts-box .box-line small { display:block; font-size:16px; line-height:1.6; }
+    .cts-box .box-txt { font-size:16px; line-height:1.4; color:#333; letter-spacing:-1.8px; }
+    .cts-box .box-txt.tbl-top { padding-left:20px; text-indent:-20px; text-align:left; margin-bottom:40px; }
+    .cts-box .box-txt + .box-txt { margin-top:20px; }
+    .cts-box .box-desc { margin-top:10px; font-size:16px; line-height:18px; color:#626c74; letter-spacing:-0.7px; }
+    .boxline-wrap li { display:inline-block; }
+    .boxline-wrap + .box-txt { margin-top:30px; }
+    .boxline-wrap li + li { margin-left:30px; padding:12px 15px; }
+    .cts-box .box-list { overflow:hidden; margin-bottom:30px; }
+    .cts-box .box-list dt, .cts-box .box-list dd { padding:12px 15px; color:#626C74; text-align:left; }
+    .cts-box .box-list dt { border-bottom:1px solid #495057; font-weight:bold; font-size:16px; line-height:20px; }
+    .cts-box .box-list dd { float:left; width:50%; border-bottom:1px solid #ddd; font-size:14px; line-height:18px; }
+
+    .online-wrap .cts-box { /*background:none;*/ padding:60px 40px; }
+    .online-wrap .box-info { /*background:#fff;*/ margin-bottom:60px; }
+    .online-wrap .cts-box .box-list dd { background:#fff; }
+    .online-wrap .cts-box .list-tit { margin-bottom:10px; text-align:left; }
+    .online-wrap .comp-wrap p.desc { margin:20px 0 10px; font-size:14px; line-height:1.6; text-align:left;}
+    .online-wrap .box-desc { margin-top:60px; text-align:center; }
+
+
+    /* 한도조회 */
+    .limit-input-wrap .income label { margin-left:40px;  }
+    .limit-input-wrap .income label:first-child { margin-left:0; }
+
+    /* 민원센터 */
+    .complaint-wrap .radiobox-area label { margin-right:80px; }
+    .complaint-wrap .file-wrap #file_src { width:320px; }
+    .complaint-wrap .boxline-wrap li + li { margin-left:80px; }
+    .complaint-wrap .apply-wrap .cts-box { margin-bottom:40px; padding:40px; }
+    .complaint-wrap .status-cts .cts-img { padding:30px 30px 60px; }
+    .complaint-wrap .status-cts .cts-box { margin-top:20px; }
+    .complaint-wrap .status-cts .box-txt { font-size:26px; line-height:1.6; }
+    .complaint-wrap .affairs-cts td ul { margin-top:5px; }
+
+    .complaint-wrap .apply-wrap .line-box { margin-bottom:40px; padding-bottom:40px; border-bottom:1px solid #ccc; }
+    .complaint-wrap .apply-wrap .line-box .list-tit { margin-bottom:10px; }
+
+    /* 금융소비자보호 체계 */
+    .protection-wrap {}
+    .protection-wrap .system-cts .table-wrap { margin-top:65px; }
+    .protection-wrap .system-cts .table-wrap td span { padding:0 15px; }
+
+    /* 개인정보보호 */
+    .privacy-wrap table { margin-top:10px; }
+    .privacy-wrap .select-wrap { width:500px; float:right; margin-top:40px; }
+    .privacy-wrap [class*='btn-'] { margin-top:30px; }
+    .privacy-wrap .list td { text-indent:0;}
+
+    /* faq */
+    .accordion > li { border-bottom:1px solid #B3BBC0; padding:18px 19px; }
+    .accordion > li:first-child { border-top:1px solid #B3BBC0; }
+    .accordion li .category { display:inline-block; text-align:center; width:46px; height:46px; line-height:44px; color:#495057; font-size:20px; background:#fff; border:1px solid #495057; border-radius:30px; margin-right:30px; }
+    .accordion li.active .category { color:#EC008C; border:1px solid #EC008C; }
+    .accordion li .question-wrap { display:block; min-height:46px; background-image:url(../images/page/btn_plus.png); background-repeat:no-repeat; background-position:center right;  }
+    .accordion li.active .question-wrap { margin-bottom:12px; background-image:url(../images/page/btn_minus.png); }
+    .accordion li .question-wrap .con { display:block; padding:0 70px; margin-top:-37px; color:#495057; font-size:16px; }
+    .accordion li.active .question-wrap .con { color:#EC008C; }
+    .accordion li .answer-wrap { display:none; }
+    .accordion li.active .answer-wrap { /*display:block; margin-top:6px;*/ }
+    .accordion li .answer-wrap .con { display:inline-block; color:#495057; font-size:16px; padding:0 70px; }
+
+    /* 상품공시실이용매뉴얼 */
+    .manual-wrap .txt-box { margin-top:10px; }
+    .manual-wrap .list-tit { margin-top:60px; }
+    .manual-wrap .list-tit + .contents-area { margin-top:25px; }
+    .manual-wrap .list-tit + .rice { margin:5px 0 20px 28px; }
+    .manual-wrap .list-tit + p { margin:15px 0 15px 28px; }
+    .manual-wrap .contents-area { padding-left:80px; }
+    .manual-wrap .contents-area p + p { margin-top:5px; }
+    .manual-wrap .contents-area [class*='btn-'] { margin-left:15px; }
+    .manual-wrap .contents-area span + span { margin-left:30px; }
+
+    /* 상품소개 */
+    .disclosure-wrap .txt-box + .caption-tit { margin-top:60px; }
+    .disclosure-wrap .terms-txt .list-tit { margin:40px 0 20px; }
+    .disclosure-wrap .terms-txt .list-tit:first-child { margin-top:0; }
+    .disclosure-wrap .prod-date { margin-top:80px; padding-top:6px; border-top:2px solid #b3bbc0; }
+
+    /* 금융사기 주의사항  */
+    .list-wrap .list-tit { margin:35px 0 15px; }
+    .list-wrap .list-tit:first-child { margin-top:0; }
+    .list-wrap p { padding-left:25px; margin-top:25px; line-height:1.5; }
+    .list-wrap .list-tit + p { margin-top:0; }
+
+    /* 게시판 - list */
+    .search-wrap { width:610px; margin:0 auto 50px auto; font-size:0; }
+    .search-wrap * { display:inline-block; vertical-align:middle; }
+    .search-wrap .select-wrap { width:150px; margin-right:10px;}
+    .search-wrap input[type="text"] { width:350px;  margin-right:10px;}
+
+    .table-style.list { table-layout:fixed; }
+    .table-style.list tbody { background:transparent; }
+    .table-style.list td { padding:13px 5px 14px;}
+    .table-style.list td:first-child { font-weight:bold; }
+    .table-style.list td.title { text-align:left; }
+    .table-style.list .title a { display:block; max-width:99%; overflow:hidden; font-size:16px; text-overflow:ellipsis; white-space:nowrap; }
+    .table-style.list .file a { display:inline-block; width:22px; height:21px; overflow:hidden; background:url('../images/page/add_file.png') no-repeat 0 0; text-indent:100%; white-space:nowrap; vertical-align:middle; }
+    .table-style.list .file a + a { margin-left:4px; }
+    .table-style.list .file a:hover, .table-style.list .file a:focus { background-position:0 -21px; }
+
+    /* 게시판 - view */
+    .board-tit { overflow:hidden; padding:0 40px 30px; border-bottom:1px solid #495057; }
+    .board-tit h3 { float:left; max-width:710px; /*overflow:hidden; text-overflow:ellipsis; white-space:nowrap;*/ font-size:26px; font-weight:normal; letter-spacing:-2px; line-height:30px; }
+    .board-tit .date { float:right; font-size:14px; line-height:30px;}
+    .board-tit .divs { float:left; padding-right:30px; line-height:30px; }
+    .board-con { padding:40px 40px 80px; }
+    .board-con p + p { margin-top:20px; }
+    .add-file-box { margin:0 40px; padding:20px 30px 20px 0; background:#fff; }
+    .add-file-box a { display:block; margin-left:30px; padding:5px 0; font-size:18px; color:#1083c4; }
+    .board-nav { overflow:hidden; border-top:1px solid #495057; border-bottom:1px solid #495057; margin-top:40px; }
+    .board-nav > p { float:left; width:50%; height:36px; margin:19px 0;}
+    .board-nav > p * { vertical-align:middle; }
+    .board-nav > p > a { display:inline-block; width:calc(100% - 150px); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .board-nav .nav-next { border-left:1px solid #e2e2e2; text-align:right;}
+    .board-nav strong { font-size:14px; }
+    .board-nav .nav-prev strong { margin:0 30px 0 5px; }
+    .board-nav .nav-next strong { margin:0 5px 0 30px; }
+    .board-view-wrap .btn-circle { width:36px; height:36px; background-color:#fff; line-height:34px; }
+    .board-view-wrap .btn-circle.prev { background-image:url('../images/common/ico_s_prev.png'); }
+    .board-view-wrap .btn-circle.prev:hover, .board-view-wrap .btn-circle.prev:focus { background-image:url('../images/common/ico_s_prev_on.png'); }
+    .board-view-wrap .btn-circle.next { background-image:url('../images/common/ico_s_next.png'); }
+    .board-view-wrap .btn-circle.next:hover, .board-view-wrap .btn-circle.next:focus { background-image:url('../images/common/ico_s_next_on.png'); }
+
+    /* 금리인하요구권 */
+    .ratecut-info-wrap .btn-down { margin-top:20px; }
+    .ratecut-info-wrap .btn-wrap.line-top { margin-top:80px; }g
+                                                              .btn-wrap.line-top { padding-top:40px; border-top:1px solid #e2e2e2; }
+    .ratecut-info-wrap .noti {  padding-left:0; margin-top:5px; font-size:12px; line-height:16px; letter-spacing:-0.7px; text-indent:0; color:#626c74; }
+    .ratecut-wrap { position:relative; }
+    .step-wrap { margin-bottom:60px; text-align:center; }
+    .step-wrap li { display:inline-block; position:relative; margin-left:65px; text-align:left; }
+    .step-wrap li:before { display:block; content:""; clear:both; position:absolute; top:15px; left:-38px; width:12px; height:23px; background:url(../images/page/img_step_arrow.png) no-repeat 0 0; }
+    .step-wrap li:first-child { margin-left:0; }
+    .step-wrap li:first-child:before { display:none; }
+    .step-wrap li span { display:block; opacity:.5; height:52px; padding-left:60px; font-size:30px; }
+    .step-wrap li strong { display:block; font-size:12px; }
+    .step-wrap li.active span { opacity:1; }
+    .step-wrap li.step01 span { background:url('../images/page/img_ratecut_step1.png') no-repeat 0 0; }
+    .step-wrap li.step02 span { background:url('../images/page/img_ratecut_step2.png') no-repeat 0 0; }
+    .step-wrap li.step03 span { background:url('../images/page/img_ratecut_step3.png') no-repeat 0 0; }
+    .ratecut-wrap .cts-box { font-size:20px; }
+    .ratecut-apply .reason-list, .ratecut-apply .txt-box { margin-top:20px; }
+    .ratecut-apply .reason-list input[type=text] { width:85%; margin-left:5px; }
+    .ratecut-apply .reason-list { background:#fff; border-top:1px solid #495057; }
+    .ratecut-apply .reason-list li { padding:12px 15px; border-bottom:1px solid #ccc; }
+    .ratecut-apply .reason-list li .radio { padding-left:35px; }
+    .ratecut-apply .star { margin-top:5px; font-size:12px; color:#626c74; line-height:16px; }
+    .ratecut-apply .cts-box { margin-top:40px; }
+    .ratecut-apply .boxline-wrap li + li { margin-left:100px; }
+    .ratecut-apply .boxline-wrap .box-name { min-width:210px; padding:8px 10px; }
+    .ratecut-apply .boxline-wrap span.txt1 { font-size:26px; }
+    .ratecut-apply .boxline-wrap span.txt2 { padding-top:5px; font-size:16px; }
+    .ratecut-apply .proc { padding-top:30px; }
+    .ratecut-apply .proc p { padding-bottom:15px; }
+    .ratecut-apply .proc label { margin:0 20px; }
+    .ratecut-apply .agree-txt { margin-top:40px; text-align:center; }
+    .ratecut-apply .account-inp .grid-wrap { margin:20px 0 40px; }
+    .ratecut-apply .guide-txt { color:#333; font-size:20px; line-height:1.2; text-align:center; }
+    .ratecut-layer .pop-cts p { padding:30px 0; font-size:20px; color:#333; }
+    .ratecut-apply table + .required-wrap { margin:60px 0 30px; }
+    .ratecut-apply .grid-wrap .form-banknum input { width:325px; }
+    .ratecut-apply .grid-wrap a { float:right; }
+    .ratecut-apply .evi-list { text-align:left; }
+    .ratecut-apply .guide-txt { margin-top:40px; }
+
+    .bank-list { overflow:hidden; outline:none; }
+    .bank-list .ctm-radio { float: left; width: 24.7%; margin-bottom: 15px; font-size: 16px; margin-left: 2px; }
+
+    .ratecut-wrap .cts-box { padding:60px 40px; }
+    .ratecut-wrap .box-info { margin-bottom:60px; }
+    .ratecut-wrap .comp-wrap .noti { font-size:16px; font-weight:bold; margin-bottom:15px; text-align:left; }
+    .ratecut-wrap .cts-box .box-list dd { background:#fff; }
+    .ratecut-wrap .cts-box .list-tit { margin-bottom:10px; text-align:left; }
+    .ratecut-wrap .comp-wrap p.desc { margin:20px 0 10px; font-size:14px; line-height:1.6; text-align:left;}
+    .ratecut-wrap .box-desc { margin-top:60px; text-align:center; }
+    .ratecut-wrap .comp-wrap .table-style { margin-bottom:30px; }
+
+    .impossible { padding-right:18px; background:url('../images/page/ico_impossible.png') no-repeat right 4px; color:#999; }
+    .possible { padding-right:18px; background:url('../images/page/ico_possible.png') no-repeat right 4px; color:#dc0082; }
+    .approval { color:#dc0082; }
+    .complete { color:#007abf; }
+
+    .ratecut-wrap .result-wrap .table-style th, .ratecut-wrap .result-wrap .table-style td { padding-left:7px; padding-right:7px; }
+    .ratecut-wrap .result-wrap .table-style th span { font-size:14px; }
+
+
+    /* 금융주소 한번에 - 서비스 안내 */
+    .service-info-wrap .line-box .tit-txt { margin-bottom:15px; }
+    .service-info-wrap .line-box .contents-area { padding-left:100px; }
+    .service-info-wrap .list li { font-size:14px; line-height:24px; }
+    .service-info-wrap .noti { font-size:13px; line-height:1.5; }
+    .service-info-wrap .btn-normal { margin-top:20px; }
+
+    /* 전자금융안내 */
+    .efinancial-info-wrap .table-style tbody th { background:#fff; font-size:14px; font-weight:normal; }
+    .table-style thead tr + tr th { border-top:1px solid #495057; }
+
+    /* 금융계산기 */
+    .calculator-wrap .input-wrap .grid-wrap:first-child { margin-top:30px; }
+    .calculator-wrap .calculator .slider-wrap { width:445px; height:25px; padding:10px 0 0  10px; margin:2px 0 8px; /*position:relative; float:left;*/ }
+    .calculator-wrap .calculator.no-btn .slider-wrap { padding:33px 35px 33px 30px; }
+    .slider.ui-slider .ui-slider-handle { width:26px; height:26px; top: -0.6em; background:url(../images/page/btn_slider.png) no-repeat; border:none; }
+    .slider.ui-widget.ui-widget-content { border:none; background:url(../images/page/bg_slider_bar.png) no-repeat right 0; width:425px; height:5px; }
+    .slider.ui-slider .ui-slider-range { background:url(../images/page/bg_slider_full.png) no-repeat; width:425px; height:5px; }
+    .money-btn-wrap { font-size:0; margin:0; }
+    .money-btn-wrap .btn-normal { margin-left:5px; padding:0 22px; background:transparent; border:1px solid #b3bbc0; }
+    .money-btn-wrap .btn-normal:hover, .money-btn-wrap .btn-normal:focus { background:#626C74; }
+    .money-btn-wrap .btn-normal:first-child { margin-left:0; }
+    .money-btn-wrap .btn-normal.dark { background:#626C74 !important; border:1px solid #626C74  !important;}
+    .btn-normal.tiny.fix-width { width:70px; padding:0px !important; }
+    .inp-area { position:relative; display:inline-block; width:100%; z-index:1; }
+    .inp-area .unit-txt { top:0; }
+    .money-btn-wrap + .inp-area { margin-top:20px; }
+    .radio-wrap { font-size:0; height:45px; padding-top:15px; }
+    .radio-wrap .radio:last-of-type { margin-right:0; }
+    .inp-area { overflow:inherit !important; }
+    .calculator .inp-area.inradio { height:44px; }
+    .calculator .inp-area.inradio .input-area { width:276px; position:relative; float:left; }
+    .calculator .inp-area.inradio .radio-area { float:right; }
+    .calculator .inp-area.inradio .radio-area .radio { margin:0 0 0 25px; height:44px; background-position:0 13px; line-height:42px; }
+    .calculator.inradio { height:44px; line-height:42px;}
+    .calculator.inradio .radio { margin-left:45px; margin-right:0; }
+    .calculator.inradio .radio:first-child { margin-left:0; }
+    .calculator-wrap .line-box .tit-txt { text-align:left; }
+    .calculator-result { display:none; }
+    .calculator-result .btn-wrap { margin-top:40px; }
+
+    .calculator-wrap .table-style th { text-align:right; }
+    .calculator-wrap .table-style tbody td { text-align:right;}
+    .calculator-wrap .table-style th:first-child, .calculator-wrap .table-style tbody td:first-child { text-align:center;}
+
+    /* ARS 구성도 */
+    .ars-wrap .cts-box .table-wrap { margin-top:30px; }
+
+    /* 채권추심업무 */
+    .num-list li { margin-top:15px; }
+    .num-list li:first-child { margin-top:0; }
+
+    /* 온라인 서류제출 */
+    .online-wrap .evi-list label, .ratecut-apply .evi-list label { margin-right:30px; }
+    .online-wrap .evi-list label:first-child, .ratecut-apply .evi-list label:first-child { margin-left:0; }
+    .online-wrap .account-num { position:relative; }
+    .online-wrap .account-num .form-bank { /*width:35%;*/ }
+    .online-wrap .account-num .form-num { /*width:59.4%;*/ }
+    .online-wrap .account-num .form-num input { width:325px; }
+    .online-wrap .account-num .form-name { /*width:50.2%;*/ }
+    .online-wrap .account-num .form-name input { width:350px; }
+    .online-wrap .account-num a { float:right; }
+    .online-wrap .agree-wrap .all-agree { text-align:left; }
+    .online-wrap .agree-wrap .item-check { margin:20px 0 0 25px; }
+    .online-wrap .agree-wrap .item-check button { margin-left:5px; }
+    .online-wrap .comp-wrap .cts-box .box-line{ margin-bottom:20px; }
+    .online-wrap .comp-wrap .cts-box .box-txt { padding-top:0; }
+
+    .online-wrap .apply-wrap .agree-wrap { margin-bottom:60px; }
+    .online-wrap .file-wrap { margin-top:18px; }
+    .online-wrap .file-wrap.first { margin-top:0; }
+    .online-wrap .file-wrap [id*='file_src'] { width:245px; }
+    .online-wrap .file-wrap .btn-normal.form { padding:0 20px; }
+    .online-wrap .grid2 > .form-wrap:nth-child(odd) { margin-right:5.2%; }
+    .online-wrap button[class*='file-'] { width:44px; height:44px; float:none; background-color:#dadada; background-repeat:no-repeat; background-position:center center; background-size:20px; border-radius:50%; vertical-align:top; margin-left:0;}
+    .online-wrap .file-add { background-image:url('../images/page/file_plus.png'); }
+    .online-wrap .file-delete { background-image:url('../images/page/file_minus.png'); }
+
+    .online-layer .table-style td span { display:inline-block; padding-left: 18px; text-indent:-18px; }
+
+    .bank-layer .accordion li { padding:0; }
+    .bank-layer .accordion li .question-wrap { min-height:none; padding:25px 19px; }
+    .bank-layer .accordion li .question-wrap .con { display:inline; padding:0; margin-top:0; font-size: 26px; font-weight:bold; color:#49505a; }
+    .bank-layer .accordion li .answer-wrap { padding: 0 19px; }
+
+
+    /* 대출계약철회권 */
+    .withdrawal-wrap .define-list { margin-bottom:60px; }
+    .withdrawal-wrap .terms-txt { margin-top:40px; }
+
+    /* 상품공지실 */
+    .depositterms-cts .list-tit { margin-top:60px; }
+    .depositterms-cts .tab-wrap + .list-tit { margin-top:0; }
+    .depositterms-cts .accordion-wrap { padding-top:30px; }
+
+    .loanterms-cts .list-tit + p { padding:30px 0 50px; }
+
+    /* 멤버십서비스 */
+    .membership-wrap .auth-wrap { padding:30px 0 40px; border-top:none; }
+    .layerpopup .pop-cts .terms-txt { margin:0; padding:0; }
+    .membership-wrap .comp-wrap .list-tit { margin:65px 0 15px; }
+
+    /* 보안프로그램 설치 */
+    .security-wrap .table-wrap { margin-top:60px; }
+
+    /* 공인인증센터 */
+    .auth-wrap .list-tit { margin-top:60px; }
+    .auth-wrap .table-wrap .table-style { margin-top:0; }
+    .auth-wrap .auth-noti { margin-top:45px; font-size:14px; text-align:center; color:#626c74; letter-spacing:-0.7px; line-height:16px; }
+    .auth-wrap .auth-noti [class*='btn-'] { background:transparent; margin-left:5px; /*color:#495057 !important;*/ }
+    .auth-wrap .auth-noti [class*='btn-']:hover, .auth-wrap .auth-noti [class*='btn-']:focus { background:#495057; }
+
+    .auth_type2 .list.type1 { margin-top:20px; font-weight:bold; }
+
+    .auth-wrap .contents-area { margin-top:20px; }
+
+    /* error 페이지 */
+    #headerWrap.error-header { min-height:90px; }
+    .error-wrap { font-size:18px; line-height:1.4; }
+
+    /* 대출가이드 */
+    .guide-wrap .preparation-cts .select-wrap { width:360px; margin:0 auto 65px auto; }
+    .guide-wrap .preparation-cts div.list-tit { margin:60px 0 20px; }
+    .guide-wrap .preparation-cts .define-list { margin-top:45px; }
+    .guide-wrap .preparation-cts .define-list .de-tit { width:10%; }
+    .guide-wrap .guide-cts .list-tit { margin-top:60px; }
+    .guide-wrap .guide-cts .list-tit:first-child { margin-top:0; }
+    .guide-wrap .guide-cts .txt-box { margin-top:20px; }
+    .guide-wrap .guide-cts .img-cts { margin-top:20px; }
+
+    .guide-wrap .desc { position:relative; margin:20px 0 0 25px; padding-left:12px; }
+    .guide-wrap .desc:before { position:absolute; left:0px; top:-1px; content:"•"; }
+    .guide-wrap .star { margin-left:38px; padding-left:10px; font-size: 14px; }
+
+    /* 대출준비서류 ul tab */
+    .select-tab { position:relative; width:360px; margin:0 auto 65px auto; }
+    .select-tab .tab-txt { /*min-height:44px;*/ display:block; position:relative; padding:8px 12px; background:#fff; border:1px solid #b3bbc0; font-size:16px; z-index:10; outline:none;}
+    .select-tab .tab-txt:after { display:inline-block; content:''; position:absolute; top:50%; right:10px; margin-top:-6px; width:16px; height:11px; background: url("../images/common/bg_select_arrow_up.png") no-repeat 0 0; }
+    .select-list { display:none; position:absolute; top:46px; left:0; width:100%; border:1px solid #ddd; z-index:5; }
+    .select-list li {  }
+    .select-list a { display:block; background:#fff; padding:3px 20px 3px 6px; color:#000; }
+    .select-list a:hover,.select-list a:focus { background:#ddd; }
+    .tab-txt.focus { border:2px solid #ec008c; }
+
+    /* 비대면 계좌개설 서비스 */
+    .nonfacingt-wrap .list-tit { margin:60px 0 10px; }
+    .nonfacingt-wrap .img-cts { margin-top:40px; }
+    .nonfacingt-wrap .img-cts ul { text-align:center; }
+    .nonfacingt-wrap .img-cts li { display:inline-block; }
+    .nonfacingt-wrap .sms-input { padding:40px 170px; background:#fff; }
+    .nonfacingt-wrap .sms-input input { width:495px; margin-right:5px; }
+    .nonfacingt-wrap .sms-input p { margin-top:10px; }
+    .nonfacingt-wrap .qr-list li { padding:0 100px; text-align:center; }
+    .nonfacingt-wrap .qr-list span { display:block; margin-top:25px; font-weight:bold; }
+
+    /* 저축은행소개 */
+    .introduction-wrap .tit-img, .introduction-wrap .cts-txt-big { text-align:center; }
+    .introduction-wrap .greetings-cts .tit-img, .introduction-wrap .greetings-cts .cts-txt-big { text-align:left; }
+    .introduction-wrap .cts-txt-big { margin-bottom:60px; font-size:24px; line-height:1.3; letter-spacing:-0.1em; }
+    .introduction-wrap .tit-img + .cts-txt-big { margin-top:20px; }
+    .introduction-wrap .sign { margin-top:40px; text-align:right; }
+    .introduction-wrap .motivation { width:870px; overflow:hidden; margin:0 auto; }
+    .introduction-wrap .motivation li { float:left; }
+    .introduction-wrap .motivation li + li { margin-left:40px; }
+
+    /* 대표이사인사말 */
+    .greetings-cts { /*text-align:center;*/ }
+    .greetings-cts .txt-wrap { position:relative; margin-top:60px; padding-top:20px; }
+    .greetings-cts .txt-wrap:before { display:block; content:''; position:absolute; width:70px; height:2px; background-color:#EC008C; left:0; top:0; }
+    .greetings-cts .txt-wrap p + p { margin-top:30px; }
+
+
+    /* 연혁 */
+    .history-cts { position:relative; height:1810px; margin-bottom:100px;}
+    .history-cts:before { display:inline-block; content:''; position:absolute; top:0; left:50%; width:1px; height:100%; background:#0087d4; }
+    .history-cts dl { position:absolute; }
+    .history-cts dl:nth-child(odd) { right:50%; margin-right:20px; text-align:right; }
+    .history-cts dl:nth-child(even) { left:50%; margin-left:20px; text-align:left; }
+    .history-cts dt { position:relative; margin-bottom:15px; }
+    .history-cts dt:after { display:inline-block; content:''; position:absolute; top:3px; right:-31px; width:14px; height:14px; background:#fff; border:3px solid #ec008c; border-radius:50%; }
+    .history-cts dl:nth-child(even) dt:after { right:inherit; left:-29px; border:3px solid #612885; }
+    .history-cts dd { overflow:hidden; font-size:14px; color:#747b80; }
+    .history-cts dl dd strong { position:relative; display:inline-block; font-size:15px; color:#495057; }
+    .history-cts dl dd strong:after { display:inline-block; content:''; position:absolute; top:50%; left:0; width:2px; height:12px; margin-top:-5px; background:#e2e2e2;}
+    .history-cts dl:nth-child(odd) dd strong { float:right; margin-left:10px; padding-left:10px; }
+    .history-cts dl dd span { float:left; width:370px;}
+    .history-cts dl:nth-child(even) dd strong { margin-right:5px; padding-right:10px; }
+    .history-cts dl:nth-child(even) dd strong:after { left:inherit; right:0; }
+    .history-cts dl:nth-child(even) dd span { float:right; }
+    .history-cts dl.year-2018 { bottom:1715px; }
+    .history-cts dl.year-2017 { bottom:1600px;}
+    .history-cts dl.year-2016 { bottom:1410px; }
+    .history-cts dl.year-2015 { bottom:1220px; }
+    .history-cts dl.year-2014 { bottom:1085px; }
+    .history-cts dl.year-2013 { bottom:955px; }
+    .history-cts dl.year-2011 { bottom:810px; }
+    .history-cts dl.year-2010 { bottom:655px; }
+    .history-cts dl.year-2009 { bottom:540px; }
+    .history-cts dl.year-2008 { bottom:400px; }
+    .history-cts dl.year-2007 { bottom:205px; }
+    .history-cts dl.year-2006 { bottom:20px; }
+    .history-cts dl.year-2005 { bottom:-110px; }
+
+    /* 경영이념 */
+    .philosophy-cts .motivation li { margin-top:0; }
+    .philosophy-cts .list-tit { margin:80px 0 30px; }
+    .philosophy-cts .list-tit:first-child { margin-top:0; }
+    .yegaram-mean { overflow:hidden; }
+    .yegaram-mean dl { float:left; width:50%; text-align:center; }
+    .yegaram-mean dt .cts-txt-big { margin:15px 0 35px;}
+    .goal-list { overflow:hidden; }
+    .goal-list li { float:left; width:25%; }
+
+    /* 요약공시 */
+    .summary-cts td { letter-spacing:0; }
+    .summary-cts .select-wrap { width:500px; float:right; margin-top:40px; }
+    .summary-cts .table-style tfoot { background:#f9f9f9; font-weight:bold; }
+    .summary-cts .table-style tfoot th, .summary-cts .table-style tfoot td { color:#472f7c; }
+    .summary-cts .table-style .total-txt th, .summary-cts .table-style .total-txt td { color:#1390d8; font-weight:bold; }
+
+    /* 윤리경영 */
+    .ethical-list { margin-top:40px; /*text-align:center;*/ }
+    .ethical-list li { margin-top:60px;/*display:inline-block; width:472px; padding:20px 10px; vertical-align:top;*/ }
+    .ethical-list li dt span { /*display:block; padding-bottom:15px;*/ margin-right:8px; font-size:26px; color:#333; line-height:42px; }
+    .ethical-list li dd { margin-top:20px; }
+    .ethical-cts .terms-txt .list-tit { margin:40px 0 20px; }
+    .ethical-cts .terms-txt .list-tit:first-child { margin-top:0; }
+
+    /* CI소개 */
+    .ci-cts { text-align:center; }
+    .ci-cts .line-box { margin-top:60px; padding-top:30px; }
+    .ci-cts .line-box span { display:block; padding-bottom:40px; color:#495057; font-size:32px; }
+
+    /* 인재채용 */
+    .talent-cts .img-cts { margin-bottom:60px; text-align:center; }
+    .talent-cts ul { overflow:hidden; margin-top:75px; }
+    .talent-cts li { float:left; width:33%; background-repeat: no-repeat; background-size: auto 195px; background-position: center 0; padding-top:235px; font-size:17px; font-weight:bold; text-align:center; letter-spacing:-1px; }
+    .talent-cts .talent1 { background-image:url('../images/page/talent_bg01.png'); }
+    .talent-cts .talent2 { background-image:url('../images/page/talent_bg02.png'); }
+    .talent-cts .talent3 { background-image:url('../images/page/talent_bg03.png'); }
+    .talent-cts .tit { margin-bottom:10px; }
+    .introduction-wrap .btn-wrap { margin-top:80px; }
+
+    /* 영업점안내 */
+    .shop-cts .map { width:100%; height:400px; background:#ccc;  }
+    .shop-cts .list-tit { margin-top:45px; }
+    .shop-cts .define-list { margin-top:20px; }
+    .shop-cts .define-list li { margin-top:10px; }
+
+    /* 주소찾기 팝업 */
+    .address-layer .title-wrap { margin-bottom:40px; padding-bottom:40px; border-bottom:1px solid #B3BBC0;}
+    .address-layer table td:first-child { font-weight:bold; }
+    .address-layer .grid3:after { display:block; content:''; clear:both; }
+    .address-layer .grid3 .form-wrap { float:left; width:280px; margin-left:42px; }
+    .address-layer .grid3 .form-wrap:first-child { width:175px; margin-left:0; }
+    .address-layer .grid3 .form-wrap .select-wrap { width:280px; }
+    .address-layer .grid2 { margin-top:40px; }
+
+    /* 예금거래기본약관 아코디언 */
+    .txt-box + .accordion-wrap { margin-top:60px; }
+    .accordion.terms li .question-wrap .con { margin-top:0; padding-left:0; line-height:46px; }
+    .accordion.terms li .answer-wrap .con { padding-left:0; }
+
+    /*.agreementall-layer .con { display:none; }*/
+    .agreementall-layer .ctrl-box { position:absolute; top:30px; right:95px; }
+    .agreementall-layer .ctrl-box button { width:23px; height:43px; margin:0 20px; background-image:url('../images/common/btn_prev.png'); background-repeat:no-repeat; text-indent:-9999px; }
+    .agreementall-layer .ctrl-box button.btn-next { background-image:url('../images/common/btn_next.png'); }
+
+    /* 인증서선택 팝업 */
+    .cert-pop .noti { margin:20px 0 10px; font-weight:bold; font-size:18px; color:#333; }
+    .cert-pop .ctable { height:160px; overflow-y:auto; border:1px solid #b3bbc0; }
+    .cert-pop .ctable table {  }
+    .cert-pop .ctable th, .cert-pop .ctable td { max-width:100%; padding:0 10px; letter-spacing:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+    .cert-pop .ctable th { border-bottom:1px solid #b3bbc0; font-weight:normal; font-size:12px; color:#899096; }
+    .cert-pop .ctable td { padding:8px 10px 10px; line-height:1; font-size:13px; color:#4c5359; cursor:pointer;}
+    .cert-pop .ctable .selected td { background:#eaeaea; color:#047cc0; }
+    .cert-pop .cipt input { height:62px; line-height:50px; border:6px solid #ec008c; outline:none; }
+    @media all and (max-width:330px;) {
+    }
+
+  /*wa마크 추가*/
+  .img-wa { margin-right:15px; }
+  .ft-logo > a { display:inline-block; }
+  .ft-logo > img { margin-top: 20px; }

@@ -1,0 +1,67 @@
+<!--
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+1. 글자크기 자동조절
+
+-webkit-text-size-adjust
+-moz-text-size-adjust
+-ms-text-size-adjust
+
+브라우져나 모바일이나 모두 적용
+텍스트의 크기를 자동으로 조절
+
+auto : 글자크기 자동 조절
+none : 글자크기 자동 조절 하지 않음
+percentage : 100% 가장 많이 쓰는 옵션, 모든 디바이스에서 동일하게 보여주게 하는 방식
+inherit :  상속
+
+
+2. IE에 대한 스크로 속성
+
+ -ms-overflow-style: none; // IE에서 스크롤바 감춤
+ -ms-overflow-style: scrollbar; // IE에서 스크롤바 나옴
+
+ auto | none | scrollbar | -ms-autohiding-scrollbar
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      :root {
+        background: yellow;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        --color: red;
+      }
+      body {
+        padding: 0;
+        margin: 10px;
+        width: 99%;
+        height: 97%;
+        background: red;
+        overflow: hidden;
+        color: var(--color);
+      }
+    </style>
+  </head>
+  <body>
+    border-box
+  </body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: darkgrey;
+            overflow: hidden;
+        }
+        .css_Depth {
+            width: 100%;
+            height: 100%;
+            border: 10px solid red;
+            padding : 10px;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+        }
+        <!-- -->
+        .css_Depth_10 {
+            width: 20%;
+            height: 100%;
+            border: 10px solid blue;
+            margin-left: 5px;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+            float:left
+        }
+        .css_Depth_1001{
+            /* border */
+            border: 2px solid red;
+            /* 넓이 높이 */
+            height: 10%;
+            width: 100%;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+        }
+        .css_Depth_100101{
+            border: 5px solid black;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        <!-- -->
+        .css_Depth_11 {
+            width: 20%;
+            height: 100%;
+            border: 10px solid blue;
+            margin-left: 5px;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+            float:left
+        }
+        .css_Depth_1101{
+            /* border */
+            border: 2px solid red;
+            /* 넓이 높이 */
+            height: 10%;
+            width: 100%;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+        }
+        .css_Depth_110101{
+            border: 5px solid black;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        <!-- -->
+        .css_Depth_12 {
+            width: 20%;
+            height: 100%;
+            border: 10px solid blue;
+            margin-left: 5px;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+            float:left
+        }
+        .css_Depth_1201{
+            /* border */
+            border: 2px solid red;
+            /* 넓이 높이 */
+            height: 10%;
+            width: 100%;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+            text-align: center;
+        }
+        .css_Depth_120101{
+            border: 5px solid black;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-block;
+        }
+        <!-- -->
+        .css_Depth_13 {
+            width: 20%;
+            height: 100%;
+            border: 10px solid blue;
+            margin-left: 5px;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+            float:left
+        }
+        .css_Depth_1301{
+            /* border */
+            border: 2px solid red;
+            /* 넓이 높이 */
+            height: 10%;
+            width: 100%;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+            text-align: center;
+        }
+        .css_Depth_130101{
+            border: 5px solid black;
+            display: inline-block;
+        }
+        .css_Depth_1302{
+            /* border */
+            border: 2px solid red;
+            /* 넓이 높이 */
+            height: 10%;
+            width: 100%;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+            text-align: center;
+        }
+        .css_Depth_1302:before {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 100%;
+            margin-right: 0;
+            vertical-align: middle;
+        }
+        .css_Depth_130201{
+            border: 5px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div class="css_Depth">
+    <div class="css_Depth_10">
+        <h1>display - p</h1>
+        <div class="css_Depth_1001">
+            <p class="css_Depth_100101">중앙4중앙정렬</p>
+        </div>
+    </div>
+    <div class="css_Depth_11">
+        <h1>display - span</h1>
+        <div class="css_Depth_1101">
+            <span class="css_Depth_110101">중앙5중앙정렬</span>
+        </div>
+    </div>
+    <div class="css_Depth_12">
+        <h1>display - All</h1>
+        <div class="css_Depth_1201">
+            <div class="css_Depth_120101">중앙5중앙정렬</div>
+        </div>
+        <div class="css_Depth_1201">
+            <p class="css_Depth_120101">중앙5중앙정렬</p>
+        </div>
+        <div class="css_Depth_1201">
+            <span class="css_Depth_120101">중앙5중앙정렬</span>
+        </div>
+    </div>
+    <div class="css_Depth_13">
+        <h1>display -  </h1>
+        <div class="css_Depth_1301">
+            <div class="css_Depth_130101">중앙5중앙정렬</div>
+        </div>
+        <div class="css_Depth_1302">
+            <div class="css_Depth_130201">중앙5중앙정렬</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .Workspace {
+        display: grid;
+        grid-gap: 10px;
+        width: 100%;
+        height: 100%;
+        border: 10px solid blue;
+      }
+      .North {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: 10px solid red;
+      }
+      .West {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 15;
+        border: 10px solid red;
+      }
+      .Center {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 15;
+        border: 10px solid red;
+      }
+      .East {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 15;
+        border: 10px solid red;
+      }
+      .South {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: 10px solid red;
+      }
+      .NorthIn {
+        border: 10px solid black;
+        height: 100%;
+      }
+      .WestIn {
+        border: 10px solid black;
+        height: 100%;
+      }
+      .CenterIn {
+        border: 10px solid black;
+        height: 100%;
+      }
+      .EastIn {
+        border: 10px solid black;
+        height: 100%;
+      }
+      .SouthIn {
+        border: 10px solid black;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Workspace">
+      <div class="North"><div class="NorthIn">North</div></div>
+      <div class="West"><div class="WestIn">West</div></div>
+      <div class="Center"><div class="CenterIn">Center</div></div>
+      <div class="East"><div class="EastIn">East</div></div>
+      <div class="South"><div class="SouthIn">South</div></div>
+    </div>
+  </body>
+</html>

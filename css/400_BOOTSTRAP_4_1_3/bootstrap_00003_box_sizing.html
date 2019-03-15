@@ -1,0 +1,49 @@
+<!--
+box-sizing:border-box;
+
+1.border_box는 바깥쪽의 크기가 width 사이즈이고 안쪽은 그보다 작은 사이즈이다.
+content_box는 안쪽 크기가 width 크기이고 바깥쪽 크기는 width보다 크다.
+그래서 바깥쪽 크기를 width와 맞출려면 border_box를 사용하고
+안쪽 크기를 width와 맞출려면 content_box를 사용한다.
+ -webkit-box-sizing 는 구글 , -moz-box-sizing는 파이어폭스 브라우저용 속성이다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      .box_border_box {
+        width: 300px;
+        height: 300px;
+        border: 10px solid red;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+      }
+      .box_content_box {
+        width: 300px;
+        height: 300px;
+        border: 10px solid red;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+      }
+      .box_001 {
+        width: 260px;
+        height: 260px;
+        border: 10px solid blue;
+      }
+      .box_002 {
+        width: 280px;
+        height: 280px;
+        border: 10px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box_border_box"><div class="box_001">border-box</div></div>
+    <div class="box_content_box"><div class="box_002">content_box</div></div>
+  </body>
+</html>

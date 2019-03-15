@@ -1,0 +1,36 @@
+<!--
+
+-webkit-tap-highlight-color
+
+
+사용용도 :
+
+아이폰 및 아이패드에서 화면을 터치하면 검은색으로 깜빡거려 눈이 불편해지는 현상을 발견했다.
+
+이는 CSS base 속성에 다음의
+
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
+
+값을 지정해 줌으로 써 해결될 수 있다.
+
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Highlighting Elements</title>
+    <style type="text/css">
+        .cssButton {
+            width: 150px;
+            padding: 6px;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+<body>
+<button class="cssButton">Hello World</button>
+
+<button>Hello World</button>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!--
+
+display: grid;
+
+1. 화면을 그리드 형태로 분리해서 배치한다.
+2. grid-template-columns: 200px 200px 200px; 안에 숫자의 횡 갯수에 의해서 열의 갯 수가 결정된다.
+3. 사용예
+
+이미지을 일정하게 배치 할 때
+기타
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .css_01 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 10px solid blue;
+      }
+      .css_0101 {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 10px;
+        row-gap: 1em;
+      }
+      .css_010101{
+        border: 10px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="css_01">
+      <div class="css_0101">
+        <div class="css_010101">One</div>
+        <div class="css_010101">Two</div>
+        <div class="css_010101">Three</div>
+        <div class="css_010101">Four</div>
+        <div class="css_010101">Five</div>
+      </div>
+    </div>
+  </body>
+</html>

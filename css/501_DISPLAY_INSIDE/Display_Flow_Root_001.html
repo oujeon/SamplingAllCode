@@ -1,0 +1,39 @@
+<!--
+display: flow-root;
+
+1. 익스플로러에서는 작동이 되지 않는다.
+2. 자식이 float이 되어도 쪼그라드는걸 방지함
+3. 왼쪽에 붙이는 작업을 할 때 사용 한다.
+4. 사용예가 많지 않다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      .main {
+        background: pink;
+        display: flow-root;
+      }
+      .left {
+        float: left;
+        border:10px solid red;
+        margin:5px;
+      }
+      .right {
+        float: right;
+        border:10px solid red;
+        margin:5px;
+      }
+    </style>
+  </head>
+  <body>
+
+  <div class="main">
+    <div class="left">Left1</div>
+    <div class="left">Left2</div>
+    <div class="right">Right1</div>
+  </div>
+  </body>
+</html>

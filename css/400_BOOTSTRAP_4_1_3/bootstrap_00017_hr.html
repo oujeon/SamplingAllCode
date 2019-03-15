@@ -1,0 +1,37 @@
+<!--
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+hr은 라인
+
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+
+위의 옵션이 없어도 동일한 라인이 나온다.
+다만 어느 css에 의해서 hr이 변형되는 것을
+막기위해서 사용되는 것으로 추정된다.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+<p>Hello World</p>
+<hr>
+<p>good by World</p>
+</body>
+</html>

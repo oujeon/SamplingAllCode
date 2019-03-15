@@ -1,0 +1,37 @@
+<!--
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ margin-bottom: 1rem;
+ margin의 아래쪽을 1rem(16px)정도 띄움
+
+font-style: normal;는 보통모양
+line-height: inherit;는
+글줄과 글줄사이의 간격을 띄운다. 이때 띄우는 간격을 부모 요소의 속성값을 상속받습니다.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        address {
+            margin-bottom: 1rem;
+            font-style: normal;
+            line-height: inherit;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<address>
+    By <a href="mailto:webmaster@example.com">홍길동</a><br>
+    example.com<br>
+    서울특별시 종로구 사직로 161
+</address>
+</body>
+</html>

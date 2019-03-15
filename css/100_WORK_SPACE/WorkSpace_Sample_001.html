@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: darkgrey;
+        overflow: hidden;
+      }
+      .cssWorkspace {
+        width: 100%;
+        height: 100%;
+        border: 10px solid blue;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+      }
+      .csshead1 {
+        /* border */
+        border: 10px solid red;
+        /* 배경색 */
+        background-color: yellow;
+        /* 넓이 높이 */
+        height: 10%;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+      }
+      .csshead2 {
+        /* border */
+        border: 10px solid red;
+        /* 배경색 */
+        background-color: yellow;
+        /* 넓이 높이 */
+        height: 5%;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+      }
+      .cssBody {
+        /* border */
+        border: 10px solid aquamarine;
+        /* 넓이 높이 */
+        height: 70%;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+      }
+      .cssTail {
+        /* border */
+        border: 10px solid burlywood;
+        /* 넓이 높이 */
+        height: 10%;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+      }
+      .cssTail2 {
+        /* border */
+        border: 10px solid burlywood;
+        /* 넓이 높이 */
+        height: 5%;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+      }
+      .cssContainer {
+        /* border */
+        border: 10px solid red;
+        /* 넓이 높이 */
+        height: 100%;
+        width: 100%;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+      }
+      .cssLeftBox {
+        border: 5px solid chartreuse;
+        padding: 10px;
+        height: 100%;
+        width: 20%;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+        float: left; /* 왼쪽으로 공백없이 붙여준다 */
+      }
+      .cssCenterBox {
+        border: 5px solid chartreuse;
+        height: 100%;
+        width: 60%;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+        float: left; /* 왼쪽으로 공백없이 붙여준다 */
+      }
+      .cssRightBox {
+        border: 5px solid chartreuse;
+        height: 100%;
+        width: 20%;
+        -moz-box-sizing: border-box; /* Firefox  */
+        -webkit-box-sizing: border-box; /* Safari */
+        box-sizing: border-box; /* CSS3 Standard */
+        float: left; /* 왼쪽으로 공백없이 붙여준다 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cssWorkspace">
+      <div class="csshead1">head 1</div>
+      <div class="csshead2">head2</div>
+      <div class="cssBody">
+        <div class="cssContainer">
+          <div class="cssLeftBox">left</div>
+          <div class="cssCenterBox">center</div>
+          <div class="cssRightBox">right</div>
+        </div>
+      </div>
+      <div class="cssTail">tail 1</div>
+      <div class="cssTail2">tail 1</div>
+    </div>
+  </body>
+</html>

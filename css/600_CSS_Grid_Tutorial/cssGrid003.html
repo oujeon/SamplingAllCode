@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            color: #fff;
+            font-family: 'Nunito Semibold';
+            text-align: center;
+        }
+
+        #contents {
+            display: grid;
+            /* grid-template-columns: 33.3% 33.3% 33.3%; */
+            /* grid-template-columns: 30% 20% 50%; */
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: 1fr 3fr 1fr; */
+            /* grid-auto-rows: minmax(250px, auto); */
+            grid-auto-rows: repeat(3, 200px);
+            /* grid-column-gap:10px; */
+            /* grid-row-gap: 10px; */
+            grid-gap: 10px;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        #contents div {
+            background-color: #3bbced;
+            padding: 30px;
+            /* margin: 20px; */
+        }
+
+        #contents div:nth-child(even) {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+<div id="contents">
+    <div>1</div>
+    <div>2</div>
+    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+    </div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</body>
+</html>

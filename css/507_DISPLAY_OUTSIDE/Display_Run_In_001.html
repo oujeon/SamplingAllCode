@@ -1,0 +1,41 @@
+<!--
+display:run-in
+
+1. 익스플로러에서만 적용된다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .css_01 {
+        display: run-in;
+        width: 100%;
+        height: 100%;
+        border: 10px solid blue;
+      }
+      .css_0101 {
+        height: 50%;
+        border: 10px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="css_01">
+      <div class="css_0101">block1</div>
+      <div class="css_0101">block2</div>
+    </div>
+  </body>
+</html>

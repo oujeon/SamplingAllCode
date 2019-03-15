@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: darkgrey;
+            overflow: hidden;
+        }
+        .css_container_01 {
+            width: 100%;
+            height: 100%;
+            border: 10px solid red;
+            padding : 10px;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+        }
+        .css_container_0101 {
+            width: 100%;
+            height: 20%;
+            border: 10px solid red;
+            padding : 10px;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+            display:inline-block;
+        }
+        .css_container_0102 {
+            width: 100%;
+            height: 20%;
+            border: 10px solid red;
+            padding : 10px;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+            display:block;
+        }
+        .css_container_010101 {
+            height: 50%;
+            width: 15%;
+            border: 10px solid black;
+            margin : 2px;
+            float:left;
+        }
+        .css_container_010102 {
+            height:50%;
+            width: 15%;
+            border: 10px solid black;
+            margin : 2px;
+            float:left;
+        }
+        .css_container_010103 {
+            height: 50%;
+            width: 15%;
+            border: 10px solid black;
+            margin : 2px;
+            float:left;
+        }
+        .css_container_010104 {
+            height: 50%;
+            width: 15%;
+            border: 10px solid black;
+            margin : 2px;
+            float:left;
+        }
+        .css_container_010105 {
+            height: 50%;
+            width: 15%;
+            border: 10px solid black;
+            margin : 2px;
+            float:left;
+        }
+        .css_span_01 {
+            border: 10px solid red;
+        }
+        .css_div_01 {
+            border: 10px solid red;
+        }
+        .css_p_01 {
+            border: 10px solid red;
+        }
+        .css_img_01 {
+            border: 10px solid red;
+        }
+        .css_button_01 {
+        }
+    </style>
+</head>
+<body>
+    <div class="css_container_01">
+        <h1>parent => display:inline-block / child => float:left;</h1>
+        <div class="css_container_0101">
+            <div class="css_container_010101"><span class="css_span_01">span tag</span></div>
+            <div class="css_container_010102"><p class="css_p_01">p tag</p></div>
+            <div class="css_container_010103"><div class="css_div_01">div tag</div></div>
+            <div class="css_container_010104">
+                <img class="css_img_01" width='50px' src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="css_container_010105">
+                <button class="css_button_01">Hello World</button>
+            </div>
+        </div>
+        <h1>parent => display:block / child => float:left;</h1>
+        <div class="css_container_0102">
+            <div class="css_container_010101"><span class="css_span_01">span tag</span></div>
+            <div class="css_container_010102"><p class="css_p_01">p tag</p></div>
+            <div class="css_container_010103"><div class="css_div_01">div tag</div></div>
+            <div class="css_container_010104">
+                <img class="css_img_01" width='50px' src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="css_container_010105">
+                <button class="css_button_01">Hello World</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!--
+box-sizing:border-box;
+
+1.border_box는 바깥쪽의 크기가 width 사이즈이고 안쪽은 그보다 작은 사이즈이다.
+content_box는 안쪽 크기가 width 크기이고 바깥쪽 크기는 width보다 크다.
+그래서 바깥쪽 크기를 width와 맞출려면 border_box를 사용하고
+안쪽 크기를 width와 맞출려면 content_box를 사용한다.
+ -webkit-box-sizing 는 구글 , -moz-box-sizing는 파이어폭스 브라우저용 속성이다.
+
+2. bootstrap에서 사용예
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* : 모든 태그
+*::before : 모든 태그 전의 상태
+*::after : 모든 태그 이후의 상태
+
+모든 태그에 적용하고 모든태그 전 상태와 후 상태도 포함해서 적용한다.
+
+3. css 작성시 최 상단에 먼저 작성해서 모든 태그에 일괄 적으로 적용한다.
+바깥쪽 기준으로 width 크기로 적용한다.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .box_border_box {
+        width: 300px;
+        height: 300px;
+        border: 10px solid red;
+      }
+      .box_001 {
+        width: 280px;
+        height: 280px;
+        border: 10px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box_border_box"><div class="box_001">border-box</div></div>
+  </body>
+</html>

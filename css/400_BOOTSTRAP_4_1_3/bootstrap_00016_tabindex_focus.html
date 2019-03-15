@@ -1,0 +1,37 @@
+<!--
+
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+tabindex="-1"는 포커스을 주지 않게 하는 태그
+outline: 0 !important; 는
+
+outline은 borderline과 비슷하다.
+borderline 다음 바깥쪽에 있다.
+border 너비에 관여하므로 레이아웃의 사이즈를 흐트릴수 있다.
+그래서 outline: 0 !important; 준다.
+
+[tabindex="-1"]:focus는 selector 역할을 한다.
+
+tabindex="-1"이면서 focus가 간 테그을 찾아서
+outline: 0 !important;을 적용한다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        [tabindex="-1"]:focus {
+            outline: 0 !important;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<button id="foo" tabindex="-1">I'm not keyboard focusable</button>
+<button onclick="foo.focus();">Focus my sibling</button>
+</body>
+</html>

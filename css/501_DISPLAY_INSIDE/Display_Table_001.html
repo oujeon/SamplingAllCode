@@ -1,0 +1,65 @@
+<!--
+display:table
+
+1. div tag에 table같은 기능을 부여한다.
+2. table을 쓰고 싶은데 div로 할 경우 사용한다. 그런데 과연 이런 경우가 언제 있을지 모르겠다.
+3. table-cell에 margin의 기능이 작동되지 않는다. padding은 작동된다.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .css_01 {
+        display: block;
+        grid-gap: 10px;
+        width: 100%;
+        height: 100%;
+        border: 10px solid blue;
+        padding: 10px;
+      }
+      .css_0101 {
+        display: table-row;
+        border: 10px solid blue;
+        margin: 10px;
+        padding: 10px;
+      }
+      .css_010101 {
+        display: table-cell;
+        border: 10px solid red;
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="css_01">
+      <div class="css_0101">
+        <div class="css_010101">1-1</div>
+        <div class="css_010101">2-1</div>
+        <div class="css_010101">3-1</div>
+        <div class="css_010101">4-1</div>
+      </div>
+      <div class="css_0101">
+        <div class="css_010101">1-1</div>
+        <div class="css_010101">2-1</div>
+        <div class="css_010101">3-1</div>
+        <div class="css_010101">4-1</div>
+      </div>
+    </div>
+  </body>
+</html>

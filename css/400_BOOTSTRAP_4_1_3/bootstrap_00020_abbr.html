@@ -1,0 +1,66 @@
+<!--
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+}
+
+
+abbr은 약자(abbreviation)임을 나타냅니다.
+title 속성에 약자의 뜻을 넣으면, 마우스를 약자 위에 올렸을 때
+그 뜻이 툴팁으로 나옵니다.
+
+
+cursor: help; 는 커서에 물음표 표시
+
+text-decoration: underline;
+-webkit-text-decoration: underline dotted;
+text-decoration: underline dotted;
+
+는 글자에 언더라인, 언더라인 도트
+
+
+abbr에 title이 없다면 css는 적용되지 않는다. 일종에 이벤트성격 이다.
+
+data-original-title는 작동이 되지 않는다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        abbr[title],
+        abbr[data-original-title] {
+            text-decoration: underline;
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+            cursor: help;
+            border-bottom: 0;
+            border:1px solid red;
+        }
+        a[data-original-title] {
+            text-decoration: underline;
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+            cursor: help;
+            border-bottom: 0;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a>
+    and
+    <abbr data-original-title="Hello World">Hello World</abbr>
+    and
+    <abbr title="World Wide Web">WWW</abbr>
+    and
+    <abbr title="Hyper Text Markup Language">HTML</abbr>
+</p>
+</body>
+</html>

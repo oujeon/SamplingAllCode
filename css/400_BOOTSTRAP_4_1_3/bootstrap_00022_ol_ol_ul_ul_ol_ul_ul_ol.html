@@ -1,0 +1,55 @@
+<!--
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol 는
+
+ol 다음에 ol이 연속해서 붙어서 나온 경우
+ul -> ul
+ol -> ul
+ul -> ol
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ol ol,
+        ul ul,
+        ol ul,
+        ul ol {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>first item</li>
+    <li>second item      <!-- Look, the closing </li> tag is not placed here! -->
+        <ul>
+            <li>second item first subitem</li>
+            <li>second item second subitem</li>
+            <li>second item third subitem</li>
+        </ul>
+    </li>                <!-- Here is the closing </li> tag -->
+    <li>third item</li>
+</ol>
+
+<dl>
+    <dt>Firefox</dt>
+    <dd>A free, open source, cross-platform, graphical web browser
+        developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+
+    <!-- other terms and definitions -->
+</dl>
+</body>
+</html>

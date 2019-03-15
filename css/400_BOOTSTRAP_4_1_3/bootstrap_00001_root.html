@@ -1,0 +1,86 @@
+<!--
+:root{
+    background: yellow;
+}
+
+백그라운드 색을 노란색으로 한다.
+
+1. <html>보다 높은 위치의 가상 클래스(?)라고 한다.
+즉, 적용시에는 body보다 html에서 적용하는 것으로 생각하면된다.
+최상위에서 전체을 적용하고 싶을 때 사용한다.
+
+2. bootstrp에서 사용예에 대한 설명
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+ }
+
+:root는 위와 같은 용도로 쓴다.
+
+--blue는 변수이고
+
+이것을
+
+color : var(--blue)로 사용하면 --blue의 값인 #007bff이 대체된다.
+
+
+3.
+      : root {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      위의 것 보다 아래 것으로 사용한다.
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      :root {
+        background: yellow;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        --color: red;
+      }
+      body {
+        padding: 0;
+        margin: 10px;
+        width: 99%;
+        height: 97%;
+        background: red;
+        overflow: hidden;
+        color: var(--color);
+      }
+    </style>
+  </head>
+  <body>
+    border-box
+  </body>
+</html>
